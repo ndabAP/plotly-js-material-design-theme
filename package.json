@@ -1,0 +1,41 @@
+{
+  "name": "open-source-base-javascript",
+  "version": "0.0.0",
+  "description": "Base project for projects with JavaScript",
+  "main": "lib/library.js",
+  "scripts": {
+    "build": "webpack --env dev && webpack --env build",
+    "exec": "node ./node_modules/.bin/babel-node src/index.js",
+    "dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ndabAP/open-source-base"
+  },
+  "keywords": [],
+  "author": "Julian Claus <kontakt@julian-caus.de>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mocha": "^4.0.1",
+    "plotly.js": "^1.35.2",
+    "webpack": "^3.10.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^2.11.2",
+    "yargs": "^10.0.3"
+  }
+}
