@@ -9,9 +9,9 @@ let plugins = []
 
 if (env === 'build') {
   plugins.push(new UglifyJsPlugin({minimize: true}))
-  outputFile = 'bundle' + '.min.js'
+  outputFile = 'library' + '.min.js'
 } else {
-  outputFile = 'bundle' + '.js'
+  outputFile = 'library' + '.js'
 }
 
 const library = {
