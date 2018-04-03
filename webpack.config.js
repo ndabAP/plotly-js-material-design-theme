@@ -9,16 +9,16 @@ let plugins = []
 
 if (env === 'build') {
   plugins.push(new UglifyJsPlugin({minimize: true}))
-  outputFile = 'library' + '.min.js'
+  outputFile = 'library.min.js'
 } else {
-  outputFile = 'library' + '.js'
+  outputFile = 'library.js'
 }
 
 const library = {
-  entry: __dirname + '/src/index.js',
+  entry: `${__dirname}/src/index.js`,
   devtool: 'source-map',
   output: {
-    path: __dirname + '/lib',
+    path: `${__dirname}/lib`,
     filename: outputFile,
     library: 'plotly-js-material-design',
     libraryTarget: 'umd',
@@ -49,14 +49,8 @@ const library = {
 }
 
 const test = {
-  entry: __dirname + '/test/src/index.js',
+  entry: `${__dirname}/test/src/index.js`,
   devtool: 'source-map',
-  output: {
-    path: __dirname + '/test/dist',
-    filename: outputFile,
-    libraryTarget: 'umd',
-    umdNamedDefine: true
-  },
 
   module: {
     rules: [
@@ -78,7 +72,11 @@ const test = {
     extensions: ['.json', '.js']
   },
 
-  plugins: [...plugins]
+  plugins: [...plugins, new HtmlWebpackPlugin({
+    filename: 'index.html',
+    template: 'index.html',
+    inject: true
+  })]
 }
 
 module.exports = [library, test]
