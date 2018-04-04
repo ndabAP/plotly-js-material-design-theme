@@ -8,7 +8,7 @@ let outputFile
 let plugins = []
 
 if (env === 'build') {
-  plugins.push(new UglifyJsPlugin({minimize: true}))
+  // plugins.push(new UglifyJsPlugin({minimize: true}))
   outputFile = 'library.min.js'
 } else {
   outputFile = 'library.js'
@@ -51,6 +51,12 @@ const library = {
 const test = {
   entry: `${__dirname}/test/src/index.js`,
   devtool: 'source-map',
+  output: {
+    path: __dirname + '/test/dist',
+    filename: outputFile,
+    libraryTarget: 'umd',
+    umdNamedDefine: true
+  },
 
   module: {
     rules: [
