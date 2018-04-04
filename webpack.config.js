@@ -49,12 +49,12 @@ const library = {
 }
 
 const test = {
-  entry: `${__dirname}/test/src/index.js`,
+  entry: `${__dirname}/test/index.js`,
   devtool: 'source-map',
   output: {
-    path: __dirname + '/test/dist',
-    filename: outputFile,
+    path: __dirname + '/docs',
     libraryTarget: 'umd',
+    filename: outputFile,
     umdNamedDefine: true
   },
 
@@ -74,7 +74,7 @@ const test = {
   },
 
   resolve: {
-    modules: [path.resolve('./node_modules'), path.resolve('./test/src')],
+    modules: [path.resolve('./node_modules'), path.resolve('./test')],
     extensions: ['.json', '.js']
   },
 
@@ -83,6 +83,10 @@ const test = {
     template: 'index.html',
     inject: true
   })]
+}
+
+if (env === 'dev') {
+  delete test.output
 }
 
 module.exports = [library, test]
