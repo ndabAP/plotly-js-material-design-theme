@@ -1,7 +1,7 @@
 {
-  "name": "open-source-base-javascript",
-  "version": "0.0.0",
-  "description": "Base project for projects with JavaScript",
+  "name": "plotly-js-material-design-theme",
+  "version": "0.0.1",
+  "description": "Plotly.js charts with Material Design theme.",
   "main": "lib/library.js",
   "scripts": {
     "build": "webpack --env dev && webpack --env build",
