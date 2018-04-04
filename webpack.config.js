@@ -85,8 +85,4 @@ const test = {
   })]
 }
 
-if (env === 'dev') {
-  delete test.output
-}
-
 module.exports = [library, test]

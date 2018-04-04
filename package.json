@@ -1,6 +1,6 @@
 {
   "name": "plotly-js-material-design-theme",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Plotly.js charts with Material Design theme.",
   "main": "lib/library.js",
   "scripts": {
@@ -32,6 +32,7 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "html-webpack-plugin": "^3.2.0",
+    "lodash": "^4.17.5",
     "mocha": "^4.0.1",
     "plotly.js": "^1.35.2",
     "webpack": "^3.10.0",
