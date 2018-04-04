@@ -7,6 +7,7 @@ export const layout = {
 
   xaxis: {
     rangeslider: {
+      visible: false,
       borderwidth: 0
     },
 
