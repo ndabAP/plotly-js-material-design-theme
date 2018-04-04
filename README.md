@@ -1,5 +1,7 @@
 # plotly-js-material-design-theme
 
+See the current [state](https://ndabap.github.io/plotly-js-material-design-theme/).
+
 ## Features
 
 - Material Design charts
