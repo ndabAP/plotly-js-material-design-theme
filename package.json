@@ -1,6 +1,6 @@
 {
   "name": "plotly-js-material-design-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Plotly.js charts with Material Design theme.",
   "main": "lib/library.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ndabAP/open-source-base"
+    "url": "https://github.com/ndabAP/plotly-js-material-design-theme"
   },
   "keywords": [],
   "author": "Julian Claus <kontakt@julian-caus.de>",
