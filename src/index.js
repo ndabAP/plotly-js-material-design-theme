@@ -15,9 +15,11 @@ export const layout = {
     family: 'Roboto, sans-serif'
   },
 
-  colorway: ['#4285f4', '#3F51B5', '#E91E63', '#9C27B0', '#673AB7', '#F44336', '#2196F3', '#03A9F4', '#00BCD4', '#009688'],
+  colorway: ['#4285F4', '#DB4437', '#F4B400', '#3F51B5', '#E91E63', '#9C27B0', '#673AB7', '#F44336', '#2196F3', '#03A9F4', '#00BCD4', '#009688'],
 
   xaxis: {
+    zerolinecolor: '#9E9E9E',
+
     gridcolor: '#E0E0E0',
 
     titlefont: {
@@ -34,6 +36,8 @@ export const layout = {
   },
 
   yaxis: {
+    zerolinecolor: '#9E9E9E',
+
     gridcolor: '#E0E0E0',
 
     titlefont: {
@@ -45,5 +49,9 @@ export const layout = {
       color: '#757575',
       size: 12
     }
-  }
+  },
+
+  bargroupgap: 0.01,
+
+  legend: {}
 }

@@ -6,6 +6,9 @@ const configuartion = {displayModeBar: false}
 // Type: Scatter
 
 // Mode: Lines
+layout.yaxis.title = 'Title'
+layout.xaxis.title = 'Title'
+
 const scatterlines = {
   x: [1, 2, 3, 4],
   y: [10, 15, 13, 17],
@@ -14,10 +17,17 @@ const scatterlines = {
   ...scatter.lines
 }
 
-layout.xaxis.title = 'Title'
-layout.yaxis.title = 'Title'
-
 Plotly.newPlot('scatter-lines', [scatterlines], layout, configuartion)
+
+const scatterlinesmulti = {
+  x: [1, 2, 3, 4],
+  y: [12, 1, 8, 12],
+  type: 'scatter',
+  mode: 'lines',
+  ...scatter.lines
+}
+
+Plotly.newPlot('scatter-lines-multi', [scatterlines, scatterlinesmulti], layout, configuartion)
 
 // Mode: Lines
 const scattermarkers = {
@@ -40,3 +50,12 @@ const bardefault = {
 }
 
 Plotly.newPlot('bar', [bardefault], layout, configuartion)
+
+const bardefaultmulti = {
+  x: [1, 2, 3, 4],
+  y: [4, 7, 2, 11],
+  type: 'bar',
+  ...bar
+}
+
+Plotly.newPlot('bar-multi', [bardefault, bardefaultmulti], layout, configuartion)
