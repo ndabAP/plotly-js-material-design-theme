@@ -1,5 +1,5 @@
 import Plotly from 'plotly.js'
-import {layout, scatter, bar} from '../../src'
+import { layout, scatter, bar, pie } from '../../src'
 
 const configuartion = {displayModeBar: false}
 
@@ -59,3 +59,14 @@ const bardefaultmulti = {
 }
 
 Plotly.newPlot('bar-multi', [bardefault, bardefaultmulti], layout, configuartion)
+
+// Type: Pi
+
+const piedefault = {
+  values: [19, 26, 55],
+  labels: ['Residential', 'Non-Residential', 'Utility'],
+  type: 'pie',
+  ...pie
+}
+
+Plotly.newPlot('pie', [piedefault], layout, configuartion)
