@@ -1,13 +1,13 @@
 import Plotly from 'plotly.js'
-import { layout, scatter, bar, pie } from '../../src'
+import { layout, scatter, bar, pie, histogram, histogram2d } from '../../src'
 
 const configuartion = {displayModeBar: false}
 
 // Type: Scatter
 
 // Mode: Lines
-layout.yaxis.title = 'Title'
-layout.xaxis.title = 'Title'
+layout.yaxis.title = 'x-Axis'
+layout.xaxis.title = 'y-Axis'
 
 const scatterlines = {
   x: [1, 2, 3, 4],
@@ -60,7 +60,7 @@ const bardefaultmulti = {
 
 Plotly.newPlot('bar-multi', [bardefault, bardefaultmulti], layout, configuartion)
 
-// Type: Pi
+// Type: Pie
 
 const piedefault = {
   values: [19, 26, 55],
@@ -70,3 +70,24 @@ const piedefault = {
 }
 
 Plotly.newPlot('pie', [piedefault], layout, configuartion)
+
+// Type: Histogram
+
+const histogramdefault = {
+  x: [5, 9, 1, 20, 12, 8, 2, 25],
+  type: 'histogram',
+  ...histogram
+}
+
+Plotly.newPlot('histogram', [histogramdefault], layout, configuartion)
+
+// Type: Histogram 2d
+
+const histogram2ddefault = {
+  x: [1, 2, 3, 4],
+  y: [5, 6, 7, 8],
+  type: 'histogram2d',
+  ...histogram2d
+}
+
+Plotly.newPlot('histogram2d', [histogram2ddefault], layout, configuartion)
