@@ -4,9 +4,9 @@
   "description": "Plotly.js charts with Material Design theme.",
   "main": "lib/library.js",
   "scripts": {
-    "build": "webpack --env dev && webpack --env build",
+    "build": "webpack --env build",
     "exec": "node ./node_modules/.bin/babel-node src/index.js",
-    "dev": "webpack-dev-server --inline --hot"
+    "dev": "webpack-dev-server --inline --hot --env dev"
   },
   "repository": {
     "type": "git",

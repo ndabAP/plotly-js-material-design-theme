@@ -1,5 +1,6 @@
 import Plotly from 'plotly.js'
 import cloneDeep from 'lodash/cloneDeep'
+import set from 'lodash/set'
 import { layout, scatter, bar, pie, histogram, histogram2d, violin } from '../src'
 
 const configuartion = {displayModeBar: false}
@@ -80,7 +81,7 @@ const histogramdefault = {
   ...histogram
 }
 
-Plotly.newPlot('histogram', [histogramdefault], cloneDeep(layout), configuartion)
+Plotly.newPlot('histogram', [histogramdefault], set(cloneDeep(layout), 'bargroupgap', 0), configuartion)
 
 // Type: Histogram 2d
 

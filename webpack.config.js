@@ -48,15 +48,11 @@ const library = {
   plugins
 }
 
-const test = {
+let test
+
+test = {
   entry: `${__dirname}/test/index.js`,
   devtool: 'source-map',
-  output: {
-    path: __dirname + '/docs',
-    libraryTarget: 'umd',
-    filename: outputFile,
-    umdNamedDefine: true
-  },
 
   module: {
     rules: [
@@ -83,6 +79,16 @@ const test = {
     template: 'index.html',
     inject: true
   })]
+}
+
+if (env === 'build') {
+  // plugins.push(new UglifyJsPlugin({minimize: true}))
+  test.output = {
+    path: __dirname + '/docs',
+    libraryTarget: 'umd',
+    filename: outputFile,
+    umdNamedDefine: true
+  }
 }
 
 module.exports = [library, test]
