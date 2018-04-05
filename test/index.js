@@ -4,6 +4,7 @@ import set from 'lodash/set'
 import { layout, scatter, bar, pie, histogram, histogram2d, violin, ohlc, candlestick } from '../src'
 
 const configuartion = {displayModeBar: false}
+layout.autosize = true
 
 // Type: Scatter
 
