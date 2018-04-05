@@ -1,6 +1,7 @@
 # plotly-js-material-design-theme
 
-See the current [state](https://ndabap.github.io/plotly-js-material-design-theme/).
+**Warning**: This project is currently not stable and the API might change in the future. See the current 
+[demo](https://ndabap.github.io/plotly-js-material-design-theme/).
 
 ## Features
 
