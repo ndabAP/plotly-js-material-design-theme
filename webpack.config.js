@@ -49,7 +49,6 @@ const library = {
 }
 
 let test
-
 test = {
   entry: `${__dirname}/test/index.js`,
   devtool: 'source-map',
@@ -84,7 +83,7 @@ test = {
 if (env === 'build') {
   // plugins.push(new UglifyJsPlugin({minimize: true}))
   test.output = {
-    path: __dirname + '/docs',
+    path: `${__dirname}/docs`,
     libraryTarget: 'umd',
     filename: outputFile,
     umdNamedDefine: true
