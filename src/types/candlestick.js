@@ -10,10 +10,10 @@ export const candlestick = {
 
   increasing: {
     line: {
-      color: '#4285F4',
+      color: '#3F51B5',
       width: 1
     },
 
-    fillcolor: '#4285F4'
+    fillcolor: '#fff'
   }
 }
