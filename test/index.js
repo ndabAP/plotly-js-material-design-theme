@@ -1,7 +1,20 @@
 import Plotly from 'plotly.js'
 import cloneDeep from 'lodash/cloneDeep'
 import set from 'lodash/set'
-import { layout, scatter, bar, pie, histogram, histogram2d, violin, ohlc, candlestick, scatterpolar, box } from '../src'
+import {
+  layout,
+  scatter,
+  bar,
+  pie,
+  histogram,
+  histogram2d,
+  violin,
+  ohlc,
+  candlestick,
+  scatterpolar,
+  box,
+  scatter3d
+} from '../src'
 
 const configuartion = {displayModeBar: false}
 
@@ -33,7 +46,8 @@ const scatterlinesmulti = {
 
 Plotly.newPlot('scatter-lines-multi', [scatterlines, scatterlinesmulti], cloneDeep(layout), configuartion)
 
-// Mode: Lines
+// Mode: Markers
+
 const scattermarkers = {
   x: [1, 2, 3, 4],
   y: [10, 15, 13, 17],
@@ -200,3 +214,42 @@ const boxdefaultmulti = {
 }
 
 Plotly.newPlot('boxmulti', [boxdefault, boxdefaultmulti], layout, configuartion)
+
+// Type: Scatter 3d
+
+// Mode: Lines
+
+const scatter3dlines = {
+  x: [1, 2, 3, 4, 5],
+  y: [9, 28, 1, 3, 4, 10],
+  z: [10, 8, 7, 21, 1, 0],
+  mode: 'lines',
+  type: 'scatter3d',
+  ...scatter3d.lines
+}
+
+Plotly.newPlot('scatter3dlines', [scatter3dlines], layout, configuartion)
+
+const scatter3dlinesmulti = {
+  x: [1, 2, 3, 4, 5],
+  y: [5, 2, 6, 5, 3, 1],
+  z: [6, 4, 2, 19, 17, 5],
+  mode: 'lines',
+  type: 'scatter3d',
+  ...scatter3d.lines
+}
+
+Plotly.newPlot('scatter3dlinesmulti', [scatter3dlines, scatter3dlinesmulti], layout, configuartion)
+
+// Mode: markers
+
+const scatter3dmarkers = {
+  x: [1, 2, 3, 4, 5],
+  y: [9, 28, 1, 3, 4, 10],
+  z: [10, 8, 7, 21, 1, 0],
+  mode: 'markers',
+  type: 'scatter3d',
+  ...scatter3d.markers
+}
+
+Plotly.newPlot('scatter3dmarkers', [scatter3dmarkers], layout, configuartion)

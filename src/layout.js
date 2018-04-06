@@ -63,6 +63,20 @@ export const layout = {
     }
   },
 
+  scene: {
+    xaxis: {
+      spikecolor: '#E0E0E0'
+    },
+
+    yaxis: {
+      spikecolor: '#E0E0E0'
+    },
+
+    zaxis: {
+      spikecolor: '#E0E0E0'
+    }
+  },
+
   bargroupgap: 0.02,
 
   legend: {

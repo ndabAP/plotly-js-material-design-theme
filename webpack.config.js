@@ -57,9 +57,17 @@ test = {
   module: {
     rules: [
       {
-        test: /(\.jsx|\.js)$/,
+        test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /(node_modules|bower_components)/
+        exclude: /(node_modules|bower_components)/,
+        query: {compact: false}
+      },
+      {
+        test: /\.js$/,
+        use: [
+          'ify-loader',
+          'transform-loader?plotly.js/tasks/util/compress_attributes.js',
+        ]
       },
       {
         test: /(\.jsx|\.js)$/,

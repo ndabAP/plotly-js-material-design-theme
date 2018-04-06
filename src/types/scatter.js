@@ -5,5 +5,9 @@ export const scatter = {
     }
   },
 
-  markers: {}
+  markers: {
+    marker: {
+      size: 10
+    }
+  }
 }
