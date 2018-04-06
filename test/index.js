@@ -178,7 +178,7 @@ const scatterpolarmarkersmulti = {
   theta: [5, 9, 15, 18, 58, 101],
   mode: 'markers',
   type: 'scatterpolar',
-  ...scatterpolar.lines
+  ...scatterpolar.markers
 }
 
 Plotly.plot('scatterpolarmarkersmulti', [scatterpolarmarkers, scatterpolarmarkersmulti], layout, configuartion)

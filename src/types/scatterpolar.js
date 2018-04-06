@@ -3,5 +3,8 @@ export const scatterpolar = {
     line: {
       width: 2
     }
-  }
+
+  },
+
+  markers: {}
 }
