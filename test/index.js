@@ -4,14 +4,14 @@ import set from 'lodash/set'
 import { layout, scatter, bar, pie, histogram, histogram2d, violin, ohlc, candlestick, scatterpolar } from '../src'
 
 const configuartion = {displayModeBar: false}
+
 layout.autosize = true
+layout.xaxis.title = 'x-Axis'
+layout.title = 'Chart'
 
 // Type: Scatter
 
 // Mode: Lines
-layout.yaxis.title = 'x-Axis'
-layout.xaxis.title = 'y-Axis'
-layout.title = 'Chart'
 
 const scatterlines = {
   x: [1, 2, 3, 4],
@@ -182,3 +182,12 @@ const scatterpolarmarkersmulti = {
 }
 
 Plotly.plot('scatterpolarmarkersmulti', [scatterpolarmarkers, scatterpolarmarkersmulti], layout, configuartion)
+
+// Type: Box
+
+const boxdefault = {
+  y: [2, 4, 9, 11, 1, 0, 18],
+  type: 'box'
+}
+
+Plotly.newPlot('box', [boxdefault], layout, configuartion)
