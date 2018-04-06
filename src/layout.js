@@ -50,6 +50,11 @@ export const layout = {
       gridcolor: '#E0E0E0',
       ticks: '',
       linewidth: 0
+    },
+
+    angularaxis: {
+      tickcolor: '#B4B4B4',
+      linecolor: '#E0E0E0'
     }
   },
 

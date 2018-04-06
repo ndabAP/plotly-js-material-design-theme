@@ -11,6 +11,7 @@ layout.autosize = true
 // Mode: Lines
 layout.yaxis.title = 'x-Axis'
 layout.xaxis.title = 'y-Axis'
+layout.title = 'Chart'
 
 const scatterlines = {
   x: [1, 2, 3, 4],
@@ -159,3 +160,25 @@ const scatterpolarlinesmulti = {
 }
 
 Plotly.plot('scatterpolarlinesmulti', [scatterpolarlines, scatterpolarlinesmulti], layout, configuartion)
+
+// Mode: Markers
+
+const scatterpolarmarkers = {
+  r: [0.2, 0.5, 0.4, 0.7, 0.2],
+  theta: [1, 3, 6, 9, 56, 99],
+  mode: 'markers',
+  type: 'scatterpolar',
+  ...scatterpolar.lines
+}
+
+Plotly.plot('scatterpolarmarkers', [scatterpolarmarkers], layout, configuartion)
+
+const scatterpolarmarkersmulti = {
+  r: [0.3, 0.1, 0.9, 0.6, 0.7],
+  theta: [5, 9, 15, 18, 58, 101],
+  mode: 'markers',
+  type: 'scatterpolar',
+  ...scatterpolar.lines
+}
+
+Plotly.plot('scatterpolarmarkersmulti', [scatterpolarmarkers, scatterpolarmarkersmulti], layout, configuartion)
