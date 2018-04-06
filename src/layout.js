@@ -44,6 +44,15 @@ export const layout = {
     }
   },
 
+  polar: {
+    radialaxis: {
+      showticklabels: false,
+      gridcolor: '#E0E0E0',
+      ticks: '',
+      linewidth: 0
+    }
+  },
+
   bargroupgap: 0.01,
 
   legend: {

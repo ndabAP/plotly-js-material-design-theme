@@ -1,7 +1,7 @@
 import Plotly from 'plotly.js'
 import cloneDeep from 'lodash/cloneDeep'
 import set from 'lodash/set'
-import { layout, scatter, bar, pie, histogram, histogram2d, violin, ohlc, candlestick } from '../src'
+import { layout, scatter, bar, pie, histogram, histogram2d, violin, ohlc, candlestick, scatterpolar } from '../src'
 
 const configuartion = {displayModeBar: false}
 layout.autosize = true
@@ -135,3 +135,27 @@ const violindefault = {
 }
 
 Plotly.newPlot('violin', [violindefault], cloneDeep(layout), configuartion)
+
+// Type: Scatterpolar
+
+// Mode: Lines
+
+const scatterpolarlines = {
+  r: [0.2, 0.5, 0.4, 0.7, 0.2],
+  theta: [1, 3, 6, 9, 56, 99],
+  mode: 'lines',
+  type: 'scatterpolar',
+  ...scatterpolar.lines
+}
+
+Plotly.plot('scatterpolarlines', [scatterpolarlines], layout, configuartion)
+
+const scatterpolarlinesmulti = {
+  r: [0.6, 0.2, 0.8, 0.9, 0.1],
+  theta: [20, 56, 42, 74, 12, 59],
+  mode: 'lines',
+  type: 'scatterpolar',
+  ...scatterpolar.lines
+}
+
+Plotly.plot('scatterpolarlinesmulti', [scatterpolarlines, scatterpolarlinesmulti], layout, configuartion)
