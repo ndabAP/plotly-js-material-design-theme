@@ -1,7 +1,7 @@
 import Plotly from 'plotly.js'
 import cloneDeep from 'lodash/cloneDeep'
 import set from 'lodash/set'
-import { layout, scatter, bar, pie, histogram, histogram2d, violin, ohlc, candlestick, scatterpolar } from '../src'
+import { layout, scatter, bar, pie, histogram, histogram2d, violin, ohlc, candlestick, scatterpolar, box } from '../src'
 
 const configuartion = {displayModeBar: false}
 
@@ -186,8 +186,17 @@ Plotly.plot('scatterpolarmarkersmulti', [scatterpolarmarkers, scatterpolarmarker
 // Type: Box
 
 const boxdefault = {
-  y: [2, 4, 9, 11, 1, 0, 18],
-  type: 'box'
+  y: [2, 4, 9, 11, 1, 3, 18],
+  type: 'box',
+  ...box
 }
 
 Plotly.newPlot('box', [boxdefault], layout, configuartion)
+
+const boxdefaultmulti = {
+  y: [9, 2, 1, 10, 4, 1, 11],
+  type: 'box',
+  ...box
+}
+
+Plotly.newPlot('boxmulti', [boxdefault, boxdefaultmulti], layout, configuartion)
