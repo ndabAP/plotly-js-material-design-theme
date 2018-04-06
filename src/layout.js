@@ -63,7 +63,7 @@ export const layout = {
     }
   },
 
-  bargroupgap: 0.01,
+  bargroupgap: 0.02,
 
   legend: {
     font: {
