@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin
 const path = require('path')
 const env = require('yargs').argv.env
+const ReloadPlugin = require('reload-html-webpack-plugin')
 
 let outputFile
 let plugins = []
@@ -77,10 +78,15 @@ test = {
     filename: 'index.html',
     template: 'index.html',
     inject: true
-  })]
+  }), new ReloadPlugin()],
+
+  devServer: {
+    contentBase: __dirname
+  }
 }
 
 if (env === 'build') {
+  test.plugins.splice(test.plugins.length - 1, 1)
   // plugins.push(new UglifyJsPlugin({minimize: true}))
   test.output = {
     path: `${__dirname}/docs`,
