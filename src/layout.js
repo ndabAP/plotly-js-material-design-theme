@@ -3,6 +3,11 @@ export const layout = {
     family: 'Roboto, sans-serif'
   },
 
+  titlefont: {
+    size: 16,
+    color: '#757575'
+  },
+
   colorway: ['#4285F4', '#DB4437', '#F4B400', '#3F51B5', '#E91E63', '#9C27B0', '#673AB7', '#F44336', '#2196F3', '#03A9F4', '#00BCD4', '#009688'],
 
   xaxis: {
