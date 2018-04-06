@@ -1,11 +1,10 @@
 {
   "name": "plotly-js-material-design-theme",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Plotly.js charts with Material Design theme.",
   "main": "lib/library.js",
   "scripts": {
     "build": "webpack --env build",
-    "exec": "node ./node_modules/.bin/babel-node src/index.js",
     "dev": "webpack-dev-server --inline --hot --env dev"
   },
   "repository": {
@@ -23,7 +22,6 @@
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "chai": "^4.1.2",
     "eslint": "^4.13.1",
     "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-loader": "^1.9.0",
@@ -33,7 +31,6 @@
     "eslint-plugin-standard": "^3.0.1",
     "html-webpack-plugin": "^3.2.0",
     "lodash": "^4.17.5",
-    "mocha": "^4.0.1",
     "reload-html-webpack-plugin": "^0.1.2",
     "plotly.js": "^1.35.2",
     "webpack": "^3.10.0",
