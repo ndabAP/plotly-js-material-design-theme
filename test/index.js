@@ -77,7 +77,7 @@ Plotly.newPlot('pie', [piedefault], cloneDeep(layout), configuartion)
 // Type: Histogram
 
 const histogramdefault = {
-  x: [5, 9, 1, 20, 12, 8, 2, 25],
+  x: [5, 17, 1, 9, 1, 20, 12, 8, 2, 25, 5, 6, 18],
   type: 'histogram',
   ...histogram
 }
@@ -94,16 +94,6 @@ const histogram2ddefault = {
 }
 
 Plotly.newPlot('histogram2d', [histogram2ddefault], cloneDeep(layout), configuartion)
-
-// Type: Violin
-
-const violindefault = {
-  type: 'violin',
-  y: [4, 6, 9, 2, 9, 111, 90, 80, 21, 1, 2],
-  ...violin
-}
-
-Plotly.newPlot('violin', [violindefault], cloneDeep(layout), configuartion)
 
 // Type: OHLC
 
@@ -135,3 +125,13 @@ const candlestickdefault = {
 }
 
 Plotly.plot('candlestick', [candlestickdefault], cloneDeep(layout), configuartion)
+
+// Type: Violin
+
+const violindefault = {
+  type: 'violin',
+  y: [4, 6, 9, 2, 9, 111, 90, 80, 21, 1, 2],
+  ...violin
+}
+
+Plotly.newPlot('violin', [violindefault], cloneDeep(layout), configuartion)
