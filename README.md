@@ -1,6 +1,10 @@
 # plotly-js-material-design-theme
 
-**Warning**: This project is currently not stable and the API might change in the future. See the current 
+> Built on top of d3.js and stack.gl, plotly.js is a high-level, declarative charting library. plotly.js ships with 20 
+chart types, including 3D charts, statistical graphs, and SVG maps. 
+
+This library introduces the Material Design guidelines to Plotly.js. **Warning**: This project is currently not stable 
+and the API might change in the future. See the current 
 [demo](https://ndabap.github.io/plotly-js-material-design-theme/).
 
 ## Features
