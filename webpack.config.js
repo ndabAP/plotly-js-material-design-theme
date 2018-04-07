@@ -9,18 +9,16 @@ let outputFile
 let plugins = []
 
 if (env === 'build') {
+  // Fix ES6 errors first
   // plugins.push(new UglifyJsPlugin({minimize: true}))
-  outputFile = 'library.min.js'
-} else {
-  outputFile = 'library.js'
 }
 
 const library = {
   entry: `${__dirname}/src/index.js`,
   devtool: 'source-map',
   output: {
-    path: `${__dirname}/lib`,
-    filename: outputFile,
+    path: `${__dirname}/dist`,
+    filename: 'library.min.js',
     library: 'plotly-js-material-design',
     libraryTarget: 'umd',
     umdNamedDefine: true
@@ -94,12 +92,12 @@ test = {
 }
 
 if (env === 'build') {
+  // Remove reload plugin since building never stops
   test.plugins.splice(test.plugins.length - 1, 1)
-  // plugins.push(new UglifyJsPlugin({minimize: true}))
   test.output = {
     path: `${__dirname}/docs`,
     libraryTarget: 'umd',
-    filename: outputFile,
+    filename: 'app.min.js',
     umdNamedDefine: true
   }
 }
