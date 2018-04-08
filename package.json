@@ -1,6 +1,6 @@
 {
   "name": "plotly-js-material-design-theme",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Plotly.js charts with Material Design theme.",
   "main": "dist/library.min.js",
   "scripts": {
