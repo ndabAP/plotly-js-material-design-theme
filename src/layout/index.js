@@ -92,7 +92,8 @@ export const layout = {
 
   legend: {
     font: {
-      size: 16
+      size: 16,
+      color: '#757575'
     }
   }
 }
