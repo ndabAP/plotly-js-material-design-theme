@@ -44,7 +44,20 @@ const scatterlinesmulti = {
   ...scatter.lines
 }
 
-Plotly.newPlot('scatter-lines-multi', [scatterlines, scatterlinesmulti], cloneDeep(layout), configuartion)
+// Fill
+
+Plotly.newPlot('scatterlinesmulti', [scatterlines, scatterlinesmulti], cloneDeep(layout), configuartion)
+
+const scatterlinesfill = {
+  x: [1, 2, 3, 4],
+  y: [10, 15, 13, 17],
+  type: 'scatter',
+  mode: 'lines',
+  fill: 'tozeroy',
+  ...scatter.lines
+}
+
+Plotly.newPlot('scatterlinesfill', [scatterlinesfill], cloneDeep(layout), configuartion)
 
 // Mode: Markers
 
