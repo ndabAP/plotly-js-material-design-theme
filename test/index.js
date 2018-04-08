@@ -34,7 +34,7 @@ const scatterlines = {
   ...scatter.lines
 }
 
-Plotly.newPlot('scatter-lines', [scatterlines], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatterlines', [scatterlines], cloneDeep(layout), configuartion)
 
 const scatterlinesmulti = {
   x: [1, 2, 3, 4],
@@ -69,7 +69,7 @@ const scattermarkers = {
   ...scatter.markers
 }
 
-Plotly.newPlot('scatter-markers', [scattermarkers], cloneDeep(layout), configuartion)
+Plotly.newPlot('scattermarkers', [scattermarkers], cloneDeep(layout), configuartion)
 
 // Type: Bar
 
