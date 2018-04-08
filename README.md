@@ -10,8 +10,8 @@ and the API might change in the future. See the current
 ## Features
 
 - Material Design charts
-- easy extendable
-- modern ES6 base
+- easily extendable
+- effortlessly trimmable
 
 ## Installation
 
@@ -21,11 +21,11 @@ $ npm install plotly-js-material-design-theme
 
 ## Usage
 
-Import the chart type you need plus the general layout and merge it with your chart configuration. You may need to 
+Import the chart type you need plus the general index and merge it with your chart configuration. You may need to 
 specify the mode. Let's say you want the scatter type and line mode. First, import the scatter type.
 
 ```js
-import {layout, scatter} from 'plotly-js-material-design-theme'
+import {index, scatter} from 'plotly-js-material-design-theme'
 ```
 
 Now setup your chart as usual but make sure you merge it with the imported one.
@@ -39,7 +39,7 @@ const scatterlines = {
   ...scatter.lines
 }
 
-Plotly.newPlot('scatter-lines', [scatterlines], layout)
+Plotly.newPlot('scatter-lines', [scatterlines], index)
 ```
 
 ## Charts
@@ -54,6 +54,7 @@ subproperties, e. g. mode or fill. The following table lists the currently suppo
 | `bar`           |             |             |
 | `pie`           |             |             |
 | `box`           |             |             |
+| `choropleth`    |             |             |
 | `histogram`     |             |             |
 | `histogram2d`   |             |             |
 | `violin`        |             |             |

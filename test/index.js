@@ -13,7 +13,8 @@ import {
   candlestick,
   scatterpolar,
   box,
-  scatter3d
+  scatter3d,
+  choropleth
 } from '../src'
 
 const configuartion = {displayModeBar: false}
@@ -21,6 +22,9 @@ const configuartion = {displayModeBar: false}
 layout.autosize = true
 layout.xaxis.title = 'x-Axis'
 layout.title = 'Chart'
+layout.geo.scope = 'world'
+layout.geo.resolution = 50
+layout.geo.projection.scale = 1
 
 // Type: Scatter
 
@@ -176,7 +180,7 @@ const scatterpolarlines = {
   ...scatterpolar.lines
 }
 
-Plotly.plot('scatterpolarlines', [scatterpolarlines], layout, configuartion)
+Plotly.plot('scatterpolarlines', [scatterpolarlines], cloneDeep(layout), configuartion)
 
 const scatterpolarlinesmulti = {
   r: [0.6, 0.2, 0.8, 0.9, 0.1],
@@ -186,7 +190,7 @@ const scatterpolarlinesmulti = {
   ...scatterpolar.lines
 }
 
-Plotly.plot('scatterpolarlinesmulti', [scatterpolarlines, scatterpolarlinesmulti], layout, configuartion)
+Plotly.plot('scatterpolarlinesmulti', [scatterpolarlines, scatterpolarlinesmulti], cloneDeep(layout), configuartion)
 
 // Mode: Markers
 
@@ -198,7 +202,7 @@ const scatterpolarmarkers = {
   ...scatterpolar.lines
 }
 
-Plotly.plot('scatterpolarmarkers', [scatterpolarmarkers], layout, configuartion)
+Plotly.plot('scatterpolarmarkers', [scatterpolarmarkers], cloneDeep(layout), configuartion)
 
 const scatterpolarmarkersmulti = {
   r: [0.3, 0.1, 0.9, 0.6, 0.7],
@@ -208,7 +212,7 @@ const scatterpolarmarkersmulti = {
   ...scatterpolar.markers
 }
 
-Plotly.plot('scatterpolarmarkersmulti', [scatterpolarmarkers, scatterpolarmarkersmulti], layout, configuartion)
+Plotly.plot('scatterpolarmarkersmulti', [scatterpolarmarkers, scatterpolarmarkersmulti], cloneDeep(layout), configuartion)
 
 // Type: Box
 
@@ -218,7 +222,7 @@ const boxdefault = {
   ...box
 }
 
-Plotly.newPlot('box', [boxdefault], layout, configuartion)
+Plotly.newPlot('box', [boxdefault], cloneDeep(layout), configuartion)
 
 const boxdefaultmulti = {
   y: [9, 2, 1, 10, 4, 1, 11],
@@ -226,7 +230,23 @@ const boxdefaultmulti = {
   ...box
 }
 
-Plotly.newPlot('boxmulti', [boxdefault, boxdefaultmulti], layout, configuartion)
+Plotly.newPlot('boxmulti', [boxdefault, boxdefaultmulti], cloneDeep(layout), configuartion)
+
+// Type: Choropleth
+
+const choroplethdefault = {
+  type: 'choropleth',
+  locationmode: 'country names',
+  locations: ['Belarus', 'Moldova', 'Russia', 'Slovakia', 'Austria', 'Greece', 'Brazil', 'India', 'Algeria', 'Egypt',
+    'Canada', 'United States', 'Sierra Leone', 'Norway', 'Ghana', 'Australia', 'Peru', 'Guyana', 'Cape Verde',
+    'Barbados'],
+  z: [17.5, 16.8, 15.1, 13, 10.3, 10.3, 8.7, 4.3, 1, 0.4, 8.4, 9.2, 8.7, 7.7, 4.8, 12.2, 8.1, 8.1, 6.9, 6.8],
+  get text () { return this.locations },
+  autocolorscale: true,
+  ...choropleth
+}
+
+Plotly.plot('choropleth', [choroplethdefault], cloneDeep(layout), configuartion)
 
 // Type: Scatter 3d
 
@@ -241,7 +261,7 @@ const scatter3dlines = {
   ...scatter3d.lines
 }
 
-Plotly.newPlot('scatter3dlines', [scatter3dlines], layout, configuartion)
+Plotly.newPlot('scatter3dlines', [scatter3dlines], cloneDeep(layout), configuartion)
 
 const scatter3dlinesmulti = {
   x: [1, 2, 3, 4, 5],
@@ -252,7 +272,7 @@ const scatter3dlinesmulti = {
   ...scatter3d.lines
 }
 
-Plotly.newPlot('scatter3dlinesmulti', [scatter3dlines, scatter3dlinesmulti], layout, configuartion)
+Plotly.newPlot('scatter3dlinesmulti', [scatter3dlines, scatter3dlinesmulti], cloneDeep(layout), configuartion)
 
 // Mode: markers
 
@@ -265,4 +285,4 @@ const scatter3dmarkers = {
   ...scatter3d.markers
 }
 
-Plotly.newPlot('scatter3dmarkers', [scatter3dmarkers], layout, configuartion)
+Plotly.newPlot('scatter3dmarkers', [scatter3dmarkers], cloneDeep(layout), configuartion)
