@@ -49,13 +49,13 @@ subproperties, e. g. mode or fill. The following table lists the currently suppo
 
 | Type            | Mode        | Subproperty |
 |-----------------|-------------|-------------|
-| `scatter`       | `lines`     | `filled`    |
+| `scatter`       | `lines`     | `fillcolor` |
 |                 | `markers`   |             |
 | `bar`           |             |             |
 | `pie`           |             |             |
 | `box`           |             |             |
 | `choropleth`    |             |             |
-| `scatterternary`| `lines`     |             |
+| `scatterternary`| `lines`     | `fillcolor` |
 |                 | `markers`   |             |
 | `histogram`     |             |             |
 | `histogram2d`   |             |             |
