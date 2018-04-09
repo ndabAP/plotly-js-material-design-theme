@@ -23,8 +23,8 @@ const configuartion = {displayModeBar: false}
 layout.autosize = true
 layout.xaxis.title = 'x-Axis'
 layout.title = 'Chart'
-layout.geo.scope = 'world'
-layout.geo.resolution = 50
+layout.ternary.sum = 100
+layout.geo.resolution = 110
 layout.geo.projection.scale = 1
 
 // Type: Scatter
