@@ -14,7 +14,8 @@ import {
   scatterpolar,
   box,
   scatter3d,
-  choropleth
+  choropleth,
+  scatterternary
 } from '../src'
 
 const configuartion = {displayModeBar: false}
@@ -39,6 +40,23 @@ const scatterlines = {
 }
 
 Plotly.newPlot('scatterlines', [scatterlines], cloneDeep(layout), configuartion)
+
+// Error bar
+
+const scatterlineserror = {
+  x: [1, 2, 3, 4],
+  y: [10, 15, 13, 17],
+  error_y: {
+    type: 'data',
+    array: [1, 4, 2, 5],
+    visible: true
+  },
+  type: 'scatter',
+  mode: 'lines',
+  ...scatter.lines
+}
+
+Plotly.newPlot('scatterlineserror', [scatterlineserror], cloneDeep(layout), configuartion)
 
 const scatterlinesmulti = {
   x: [1, 2, 3, 4],
@@ -231,6 +249,38 @@ const boxdefaultmulti = {
 }
 
 Plotly.newPlot('boxmulti', [boxdefault, boxdefaultmulti], cloneDeep(layout), configuartion)
+
+// Type: Scatterternary
+
+// Mode: Lines
+
+const scatterternarylines = {
+  type: 'scatterternary',
+  mode: 'lines',
+  a: [75, 70, 75, 5, 10, 10, 20, 10, 15, 10, 20],
+  b: [25, 10, 20, 60, 80, 90, 70, 20, 5, 10, 10],
+  c: [0, 20, 5, 35, 10, 0, 10, 70, 80, 80, 70],
+  text: ['Point 1', 'Point 2', 'Point 3', 'Point 4', 'Point 5', 'Point 6', 'Point 7', 'Point 8', 'Point 9', 'Point 10',
+    'Point 11'],
+  ...scatterternary.markers
+}
+
+Plotly.newPlot('scatterternarylines', [scatterternarylines], cloneDeep(layout), configuartion)
+
+// Mode: Markers
+
+const scatterternarymarkers = {
+  type: 'scatterternary',
+  mode: 'markers',
+  a: [75, 70, 75, 5, 10, 10, 20, 10, 15, 10, 20],
+  b: [25, 10, 20, 60, 80, 90, 70, 20, 5, 10, 10],
+  c: [0, 20, 5, 35, 10, 0, 10, 70, 80, 80, 70],
+  text: ['Point 1', 'Point 2', 'Point 3', 'Point 4', 'Point 5', 'Point 6', 'Point 7', 'Point 8', 'Point 9', 'Point 10',
+    'Point 11'],
+  ...scatterternary.markers
+}
+
+Plotly.newPlot('scatterternarymarkers', [scatterternarymarkers], cloneDeep(layout), configuartion)
 
 // Type: Choropleth
 

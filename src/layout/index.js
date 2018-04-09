@@ -88,6 +88,23 @@ export const layout = {
     }
   },
 
+  ternary: {
+    aaxis: {
+      color: '#9E9E9E',
+      gridcolor: '#E0E0E0'
+    },
+
+    baxis: {
+      color: '#9E9E9E',
+      gridcolor: '#E0E0E0'
+    },
+
+    caxis: {
+      color: '#9E9E9E',
+      gridcolor: '#E0E0E0'
+    }
+  },
+
   bargroupgap: 0.02,
 
   legend: {

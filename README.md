@@ -55,6 +55,8 @@ subproperties, e. g. mode or fill. The following table lists the currently suppo
 | `pie`           |             |             |
 | `box`           |             |             |
 | `choropleth`    |             |             |
+| `scatterternary`| `lines`     |             |
+|                 | `markers`   |             |
 | `histogram`     |             |             |
 | `histogram2d`   |             |             |
 | `violin`        |             |             |
