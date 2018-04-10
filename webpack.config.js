@@ -1,4 +1,3 @@
-const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const path = require('path')
@@ -92,7 +91,7 @@ if (env === 'build') {
   test.output = {
     path: `${__dirname}/docs`,
     libraryTarget: 'umd',
-    filename: 'app.min.js',
+    filename: `app.min.[chunkhash].js`,
     umdNamedDefine: true
   }
 }
