@@ -21,52 +21,52 @@ $ npm install plotly-js-material-design-theme
 
 ## Usage
 
-Import the chart type you need plus the general index and merge it with your chart configuration. You may need to 
-specify the mode. Let's say you want the scatter type and line mode. First, import the scatter type.
+Import the chart type you need plus the general layout, call the function and pass in your chart configuration. Your 
+configuration will be recursively merged with the one creating Material Design, whereby your configuration has 
+precedence.
 
 ```js
-import {index, scatter} from 'plotly-js-material-design-theme'
+import {layout, scatter} from 'plotly-js-material-design-theme'
 ```
 
 Now setup your chart as usual but make sure you merge it with the imported one.
 
 ```js
-const scatterlines = {
+const scatterLines = scatter({
   x: [1, 2, 3, 4],
   y: [10, 15, 13, 17],
   type: 'scatter',
-  mode: 'lines',
-  ...scatter.lines
-}
+  mode: 'lines'
+})
 
-Plotly.newPlot('scatter-lines', [scatterlines], index)
+Plotly.newPlot('scatter-lines', [scatterLines], layout)
 ```
 
 ## Charts
 
 As of version 1.35.2, Plotly.js supports 29 chart types. However, chart types can be classified by additional 
-subproperties, e. g. mode or fill. The following table lists the currently supported charts by this library.
+subproperties, e. g. `mode` or `fillcolor`. The following table lists the currently supported charts by this library.
 
-| Type            | Mode        | Subproperty     |
-|-----------------|-------------|-----------------|
-| `scatter`       | `lines`     | `fillcolor`     |
-|                 | `markers`   |                 |
-| `bar`           |             |                 |
-| `pie`           |             |                 |
-| `box`           |             |                 |
-| `choropleth`    |             |                 |
-| `scatterternary`| `lines`     | `fillcolor`     |
-|                 | `markers`   |                 |
-| `histogram`     |             |                 |
-| `histogram2d`   |             |                 |
-| `violin`        |             |                 |
-| `ohlc`          |             |                 |
-| `candlestick`   |             |                 |
-| `sankey`        |             |                 |
-| `scatterpolar`  | `lines`     |                 |
-|                 | `markers`   |                 |
-| `scatter3d`     | `lines`     | `surfacecolor`  |
-|                 | `markers`   |                 |   
+| Type            | Mode        |
+|-----------------|-------------|
+| `scatter`       | `lines`     |
+|                 | `markers`   |
+| `bar`           |             |
+| `pie`           |             |
+| `box`           |             |
+| `choropleth`    |             |
+| `scatterternary`| `lines`     |
+|                 | `markers`   |
+| `histogram`     |             |
+| `histogram2d`   |             |
+| `violin`        |             |
+| `ohlc`          |             |
+| `candlestick`   |             |
+| `sankey`        |             |
+| `scatterpolar`  | `lines`     |
+|                 | `markers`   |
+| `scatter3d`     | `lines`     |
+|                 | `markers`   |   
 
 ## Author
 
