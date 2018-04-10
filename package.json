@@ -1,6 +1,6 @@
 {
   "name": "plotly-js-material-design-theme",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Plotly.js charts with Material Design theme.",
   "main": "dist/library.min.js",
   "scripts": {
@@ -44,6 +44,7 @@
     "html-webpack-plugin": "^3.2.0",
     "ify-loader": "^1.1.0",
     "lodash": "^4.17.5",
+    "lodash.defaultsdeep": "latest",
     "plotly.js": "^1.35.2",
     "reload-html-webpack-plugin": "^0.1.2",
     "transform-loader": "^0.2.4",

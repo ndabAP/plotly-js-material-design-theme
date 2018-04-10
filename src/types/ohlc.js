@@ -1,4 +1,6 @@
-export const ohlc = {
+import defaultsDeep from 'lodash.defaultsdeep'
+
+export const ohlc = configuration => defaultsDeep(configuration, {
   decreasing: {
     line: {
       color: '#3F51B5',
@@ -12,4 +14,4 @@ export const ohlc = {
       width: 1
     }
   }
-}
+})

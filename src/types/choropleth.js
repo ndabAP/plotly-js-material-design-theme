@@ -1,4 +1,6 @@
-export const choropleth = {
+import defaultsDeep from 'lodash.defaultsdeep'
+
+export const choropleth = configuration => defaultsDeep(configuration, {
   marker: {
     line: {
       color: '#9E9E9E',
@@ -17,4 +19,4 @@ export const choropleth = {
       color: '#757575'
     }
   }
-}
+})

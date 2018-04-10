@@ -1,4 +1,6 @@
-export const candlestick = {
+import defaultsDeep from 'lodash.defaultsdeep'
+
+export const candlestick = configuration => defaultsDeep(configuration, {
   decreasing: {
     line: {
       color: '#3F51B5',
@@ -16,4 +18,4 @@ export const candlestick = {
 
     fillcolor: '#fff'
   }
-}
+})

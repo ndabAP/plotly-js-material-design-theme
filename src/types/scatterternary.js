@@ -1,15 +1,13 @@
-export const scatterternary = {
-  lines: {
-    fillcolor: 'rgba(171, 71, 188, 0.3)',
+import defaultsDeep from 'lodash.defaultsdeep'
 
-    line: {
-      width: 2
-    }
+export const scatterternary = configuration => defaultsDeep(configuration, {
+  fillcolor: 'rgba(171, 71, 188, 0.3)',
+
+  line: {
+    width: 2
   },
 
-  markers: {
-    marker: {
-      size: 10
-    }
+  marker: {
+    size: 10
   }
-}
+})

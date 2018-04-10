@@ -1,10 +1,7 @@
-export const scatterpolar = {
-  lines: {
-    line: {
-      width: 2
-    }
+import defaultsDeep from 'lodash.defaultsdeep'
 
-  },
-
-  markers: {}
-}
+export const scatterpolar = configuration => defaultsDeep(configuration, {
+  line: {
+    width: 2
+  }
+})

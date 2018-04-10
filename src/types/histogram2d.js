@@ -1,4 +1,6 @@
-export const histogram2d = {
+import defaultsDeep from 'lodash.defaultsdeep'
+
+export const histogram2d = configuration => defaultsDeep(configuration, {
   colorscale: [['0', '#4285f4'], ['1', '#93d5ed']],
 
   colorbar: {
@@ -9,4 +11,4 @@ export const histogram2d = {
       color: '#757575'
     }
   }
-}
+})

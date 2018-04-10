@@ -1,4 +1,6 @@
-export const sankey = {
+import defaultsDeep from 'lodash.defaultsdeep'
+
+export const sankey = configuration => defaultsDeep(configuration, {
   link: {
     color: 'rgba(171, 71, 188, 0.3)'
   },
@@ -8,6 +10,7 @@ export const sankey = {
     line: {
       width: 0
     },
+
     thickness: 10
   },
 
@@ -15,4 +18,4 @@ export const sankey = {
     color: '#757575',
     size: 12
   }
-}
+})
