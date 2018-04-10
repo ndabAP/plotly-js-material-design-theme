@@ -1,17 +1,12 @@
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const path = require('path')
 const env = require('yargs').argv.env
 const ReloadPlugin = require('reload-html-webpack-plugin')
 
-let outputFile
 let plugins = []
-
-if (env === 'build') {
-  // Fix ES6 errors first
-  // plugins.push(new UglifyJsPlugin({minimize: true}))
-}
+if (env === 'build') plugins.push(new UglifyJsPlugin())
 
 const library = {
   entry: `${__dirname}/src/index.js`,
