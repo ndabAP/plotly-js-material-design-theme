@@ -62,6 +62,7 @@ subproperties, e. g. mode or fill. The following table lists the currently suppo
 | `violin`        |             |                 |
 | `ohlc`          |             |                 |
 | `candlestick`   |             |                 |
+| `sankey`        |             |                 |
 | `scatterpolar`  | `lines`     |                 |
 |                 | `markers`   |                 |
 | `scatter3d`     | `lines`     | `surfacecolor`  |

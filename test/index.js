@@ -15,7 +15,8 @@ import {
   box,
   scatter3d,
   choropleth,
-  scatterternary
+  scatterternary,
+  sankey
 } from '../src'
 
 const configuartion = {displayModeBar: false}
@@ -174,7 +175,7 @@ const candlestickdefault = {
   ...candlestick
 }
 
-Plotly.plot('candlestick', [candlestickdefault], cloneDeep(layout), configuartion)
+Plotly.newPlot('candlestick', [candlestickdefault], cloneDeep(layout), configuartion)
 
 // Type: Violin
 
@@ -198,7 +199,7 @@ const scatterpolarlines = {
   ...scatterpolar.lines
 }
 
-Plotly.plot('scatterpolarlines', [scatterpolarlines], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatterpolarlines', [scatterpolarlines], cloneDeep(layout), configuartion)
 
 const scatterpolarlinesmulti = {
   r: [0.6, 0.2, 0.8, 0.9, 0.1],
@@ -208,7 +209,7 @@ const scatterpolarlinesmulti = {
   ...scatterpolar.lines
 }
 
-Plotly.plot('scatterpolarlinesmulti', [scatterpolarlines, scatterpolarlinesmulti], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatterpolarlinesmulti', [scatterpolarlines, scatterpolarlinesmulti], cloneDeep(layout), configuartion)
 
 // Mode: Markers
 
@@ -220,7 +221,7 @@ const scatterpolarmarkers = {
   ...scatterpolar.lines
 }
 
-Plotly.plot('scatterpolarmarkers', [scatterpolarmarkers], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatterpolarmarkers', [scatterpolarmarkers], cloneDeep(layout), configuartion)
 
 const scatterpolarmarkersmulti = {
   r: [0.3, 0.1, 0.9, 0.6, 0.7],
@@ -230,7 +231,7 @@ const scatterpolarmarkersmulti = {
   ...scatterpolar.markers
 }
 
-Plotly.plot('scatterpolarmarkersmulti', [scatterpolarmarkers, scatterpolarmarkersmulti], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatterpolarmarkersmulti', [scatterpolarmarkers, scatterpolarmarkersmulti], cloneDeep(layout), configuartion)
 
 // Type: Box
 
@@ -296,7 +297,25 @@ const choroplethdefault = {
   ...choropleth
 }
 
-Plotly.plot('choropleth', [choroplethdefault], cloneDeep(layout), configuartion)
+Plotly.newPlot('choropleth', [choroplethdefault], cloneDeep(layout), configuartion)
+
+// Type: Sankey
+
+const sankeydefault = {
+  type: 'sankey',
+  node: {
+    label: ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'],
+    ...sankey.node
+  },
+  link: {
+    source: [0, 1, 0, 2, 3, 3],
+    target: [2, 3, 3, 4, 4, 5],
+    value: [8, 4, 2, 8, 4, 2],
+    ...sankey.link
+  }
+}
+
+Plotly.newPlot('sankey', [sankeydefault], cloneDeep(layout), configuartion)
 
 // Type: Scatter 3d
 
