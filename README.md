@@ -47,25 +47,25 @@ Plotly.newPlot('scatter-lines', [scatterlines], index)
 As of version 1.35.2, Plotly.js supports 29 chart types. However, chart types can be classified by additional 
 subproperties, e. g. mode or fill. The following table lists the currently supported charts by this library.
 
-| Type            | Mode        | Subproperty |
-|-----------------|-------------|-------------|
-| `scatter`       | `lines`     | `fillcolor` |
-|                 | `markers`   |             |
-| `bar`           |             |             |
-| `pie`           |             |             |
-| `box`           |             |             |
-| `choropleth`    |             |             |
-| `scatterternary`| `lines`     | `fillcolor` |
-|                 | `markers`   |             |
-| `histogram`     |             |             |
-| `histogram2d`   |             |             |
-| `violin`        |             |             |
-| `ohlc`          |             |             |
-| `candlestick`   |             |             |
-| `scatterpolar`  | `lines`     |             |
-|                 | `markers`   |             |
-| `scatter3d`     | `lines`     |             |
-|                 | `markers`   |             |
+| Type            | Mode        | Subproperty     |
+|-----------------|-------------|-----------------|
+| `scatter`       | `lines`     | `fillcolor`     |
+|                 | `markers`   |                 |
+| `bar`           |             |                 |
+| `pie`           |             |                 |
+| `box`           |             |                 |
+| `choropleth`    |             |                 |
+| `scatterternary`| `lines`     | `fillcolor`     |
+|                 | `markers`   |                 |
+| `histogram`     |             |                 |
+| `histogram2d`   |             |                 |
+| `violin`        |             |                 |
+| `ohlc`          |             |                 |
+| `candlestick`   |             |                 |
+| `scatterpolar`  | `lines`     |                 |
+|                 | `markers`   |                 |
+| `scatter3d`     | `lines`     | `surfacecolor`  |
+|                 | `markers`   |                 |   
 
 ## Author
 

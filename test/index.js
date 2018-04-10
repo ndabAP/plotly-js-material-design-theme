@@ -313,6 +313,8 @@ const scatter3dlines = {
 
 Plotly.newPlot('scatter3dlines', [scatter3dlines], cloneDeep(layout), configuartion)
 
+// Multi
+
 const scatter3dlinesmulti = {
   x: [1, 2, 3, 4, 5],
   y: [5, 2, 6, 5, 3, 1],
@@ -323,6 +325,20 @@ const scatter3dlinesmulti = {
 }
 
 Plotly.newPlot('scatter3dlinesmulti', [scatter3dlines, scatter3dlinesmulti], cloneDeep(layout), configuartion)
+
+// Fill
+
+const scatter3dlinesfill = {
+  x: [1, 2, 3, 4, 5],
+  y: [9, 28, 1, 3, 4, 10],
+  z: [10, 8, 7, 21, 1, 0],
+  surfaceaxis: 1,
+  mode: 'lines',
+  type: 'scatter3d',
+  ...scatter3d.lines
+}
+
+Plotly.newPlot('scatter3dlinesfill', [scatter3dlinesfill], cloneDeep(layout), configuartion)
 
 // Mode: markers
 
