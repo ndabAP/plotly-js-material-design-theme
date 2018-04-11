@@ -218,11 +218,10 @@ Plotly.newPlot('scatterpolarmarkersmulti', [scatterpolarmarkers, scatterpolarmar
 
 // Type: Box
 
-const boxdefault = {
+const boxdefault = box({
   y: [2, 4, 9, 11, 1, 3, 18],
-  type: 'box',
-  ...box
-}
+  type: 'box'
+})
 
 Plotly.newPlot('box', [boxdefault], cloneDeep(layout), configuartion)
 
