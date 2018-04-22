@@ -63,6 +63,7 @@ subproperties, e. g. `mode` or `fillcolor`. The following table lists the curren
 | `ohlc`          |             |
 | `candlestick`   |             |
 | `sankey`        |             |
+| `paarcords`     |             |
 | `scatterpolar`  | `lines`     |
 |                 | `markers`   |
 | `scatter3d`     | `lines`     |

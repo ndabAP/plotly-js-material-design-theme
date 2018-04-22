@@ -8,6 +8,7 @@ export const scatter = configuration => defaultsDeep(configuration, {
   },
 
   marker: {
-    size: 10
+    size: 10,
+    opacity: 1
   }
 })

@@ -90,6 +90,17 @@ const scattermarkers = scatter({
 
 Plotly.newPlot('scattermarkers', [scattermarkers], cloneDeep(layout), configuartion)
 
+const scattermarkersmarker = scatter({
+  x: [1, 2, 3, 4],
+  y: [10, 15, 13, 17],
+  mode: 'markers',
+  marker: {
+    size: [40, 60, 80, 100]
+  }
+})
+
+Plotly.newPlot('scattermarkersmarker', [scattermarkersmarker], cloneDeep(layout), configuartion)
+
 // Type: Bar
 
 const bardefault = bar({
