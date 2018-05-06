@@ -107,7 +107,7 @@ const scattermarkersmarker = scatter({
   }
 })
 
-Plotly.newPlot('scattermarkersmarker', [scattermarkersmarker], cloneDeep(layout), configuartion)
+Plotly.newPlot('scattermarkersmarker', [scattermarkersmarker], getLayout(), configuartion)
 
 // Type: Bar
 
@@ -339,7 +339,7 @@ const parcoordsdefault = parcoords({
   }]
 })
 
-Plotly.newPlot('parcoords', [parcoordsdefault], cloneDeep(layout), configuartion)
+Plotly.newPlot('parcoords', [parcoordsdefault], getLayout(), configuartion)
 
 // Type: Scatter 3d
 
