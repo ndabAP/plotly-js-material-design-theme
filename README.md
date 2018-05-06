@@ -39,12 +39,12 @@ const scatterLines = scatter({
   mode: 'lines'
 })
 
-Plotly.newPlot('scatter-lines', [scatterLines], layout)
+Plotly.newPlot('scatter-lines', [scatterLines], layout({title: 'Chart'}))
 ```
 
 ## Charts
 
-As of version 1.35.2, Plotly.js supports 29 chart types. However, chart types can be classified by additional 
+As of version 1.37.1, Plotly.js supports 31 chart types. However, chart types can be classified by additional 
 subproperties, e. g. `mode` or `fillcolor`. The following table lists the currently supported charts by this library.
 
 | Type            | Mode        |

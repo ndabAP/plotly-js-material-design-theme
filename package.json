@@ -4,7 +4,7 @@
   "description": "Plotly.js charts with Material Design theme.",
   "main": "dist/library.min.js",
   "scripts": {
-    "build": "webpack --env build",
+    "build": "rm -rf docs/* && webpack --env build",
     "dev": "webpack-dev-server --inline --hot --env dev"
   },
   "repository": {
@@ -45,7 +45,7 @@
     "ify-loader": "^1.1.0",
     "lodash": "^4.17.5",
     "lodash.defaultsdeep": "latest",
-    "plotly.js": "^1.35.2",
+    "plotly.js": "^1.37.1",
     "reload-html-webpack-plugin": "^0.1.2",
     "transform-loader": "^0.2.4",
     "uglifyjs-webpack-plugin": "^1.2.4",

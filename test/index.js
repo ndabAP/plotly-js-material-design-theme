@@ -1,6 +1,4 @@
 import Plotly from 'plotly.js'
-import cloneDeep from 'lodash/cloneDeep'
-import set from 'lodash/set'
 import {
   layout,
   scatter,
@@ -21,13 +19,23 @@ import {
 } from '../src'
 
 const configuartion = {displayModeBar: false}
-
-layout.autosize = true
-layout.xaxis.title = 'x-Axis'
-layout.title = 'Chart'
-layout.ternary.sum = 100
-layout.geo.resolution = 110
-layout.geo.projection.scale = 1
+const getLayout = additional => layout({
+  autosize: true,
+  xaxis: {
+    title: 'x-Axis'
+  },
+  title: 'Chart',
+  ternary: {
+    sum: 100
+  },
+  geo: {
+    resolution: 110,
+    projection: {
+      scale: 1
+    }
+  },
+  ...additional
+})
 
 // Type: Scatter
 
@@ -40,7 +48,7 @@ const scatterlines = scatter({
   mode: 'lines'
 })
 
-Plotly.newPlot('scatterlines', [scatterlines], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatterlines', [scatterlines], getLayout(), configuartion)
 
 // Error bar
 
@@ -56,7 +64,7 @@ const scatterlineserror = scatter({
   mode: 'lines'
 })
 
-Plotly.newPlot('scatterlineserror', [scatterlineserror], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatterlineserror', [scatterlineserror], getLayout(), configuartion)
 
 const scatterlinesmulti = scatter({
   x: [1, 2, 3, 4],
@@ -67,7 +75,7 @@ const scatterlinesmulti = scatter({
 
 // Fill
 
-Plotly.newPlot('scatterlinesmulti', [scatterlines, scatterlinesmulti], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatterlinesmulti', [scatterlines, scatterlinesmulti], getLayout(), configuartion)
 
 const scatterlinesfill = scatter({
   x: [1, 2, 3, 4],
@@ -77,7 +85,7 @@ const scatterlinesfill = scatter({
   fill: 'tozeroy'
 })
 
-Plotly.newPlot('scatterlinesfill', [scatterlinesfill], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatterlinesfill', [scatterlinesfill], getLayout(), configuartion)
 
 // Mode: Markers
 
@@ -88,7 +96,7 @@ const scattermarkers = scatter({
   mode: 'markers'
 })
 
-Plotly.newPlot('scattermarkers', [scattermarkers], cloneDeep(layout), configuartion)
+Plotly.newPlot('scattermarkers', [scattermarkers], getLayout(), configuartion)
 
 const scattermarkersmarker = scatter({
   x: [1, 2, 3, 4],
@@ -109,7 +117,7 @@ const bardefault = bar({
   type: 'bar'
 })
 
-Plotly.newPlot('bar', [bardefault], cloneDeep(layout), configuartion)
+Plotly.newPlot('bar', [bardefault], getLayout(), configuartion)
 
 const bardefaultmulti = bar({
   x: [1, 2, 3, 4],
@@ -117,7 +125,7 @@ const bardefaultmulti = bar({
   type: 'bar'
 })
 
-Plotly.newPlot('bar-multi', [bardefault, bardefaultmulti], cloneDeep(layout), configuartion)
+Plotly.newPlot('bar-multi', [bardefault, bardefaultmulti], getLayout(), configuartion)
 
 // Type: Pie
 
@@ -127,7 +135,7 @@ const piedefault = pie({
   type: 'pie'
 })
 
-Plotly.newPlot('pie', [piedefault], cloneDeep(layout), configuartion)
+Plotly.newPlot('pie', [piedefault], getLayout(), configuartion)
 
 // Type: Histogram
 
@@ -136,7 +144,7 @@ const histogramdefault = histogram({
   type: 'histogram'
 })
 
-Plotly.newPlot('histogram', [histogramdefault], set(cloneDeep(layout), 'bargroupgap', 0), configuartion)
+Plotly.newPlot('histogram', [histogramdefault], getLayout({bargroupgap: 0}), configuartion)
 
 // Type: Histogram 2d
 
@@ -146,7 +154,7 @@ const histogram2ddefault = histogram2d({
   type: 'histogram2d'
 })
 
-Plotly.newPlot('histogram2d', [histogram2ddefault], cloneDeep(layout), configuartion)
+Plotly.newPlot('histogram2d', [histogram2ddefault], getLayout(), configuartion)
 
 // Type: OHLC
 
@@ -160,7 +168,7 @@ const ohlcdefault = ohlc({
   showlegend: false
 })
 
-Plotly.newPlot('ohlc', [ohlcdefault], cloneDeep(layout), configuartion)
+Plotly.newPlot('ohlc', [ohlcdefault], getLayout(), configuartion)
 
 // Type: Candlestick
 
@@ -175,7 +183,7 @@ const candlestickdefault = candlestick({
   showlegend: false
 })
 
-Plotly.newPlot('candlestick', [candlestickdefault], cloneDeep(layout), configuartion)
+Plotly.newPlot('candlestick', [candlestickdefault], getLayout(), configuartion)
 
 // Type: Violin
 
@@ -184,7 +192,7 @@ const violindefault = violin({
   y: [4, 6, 9, 2, 9, 111, 90, 80, 21, 1, 2]
 })
 
-Plotly.newPlot('violin', [violindefault], cloneDeep(layout), configuartion)
+Plotly.newPlot('violin', [violindefault], getLayout(), configuartion)
 
 // Type: Scatterpolar
 
@@ -197,7 +205,7 @@ const scatterpolarlines = scatterpolar({
   type: 'scatterpolar'
 })
 
-Plotly.newPlot('scatterpolarlines', [scatterpolarlines], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatterpolarlines', [scatterpolarlines], getLayout(), configuartion)
 
 const scatterpolarlinesmulti = scatterpolar({
   r: [0.6, 0.2, 0.8, 0.9, 0.1],
@@ -206,7 +214,7 @@ const scatterpolarlinesmulti = scatterpolar({
   type: 'scatterpolar'
 })
 
-Plotly.newPlot('scatterpolarlinesmulti', [scatterpolarlines, scatterpolarlinesmulti], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatterpolarlinesmulti', [scatterpolarlines, scatterpolarlinesmulti], getLayout(), configuartion)
 
 // Mode: Markers
 
@@ -217,7 +225,7 @@ const scatterpolarmarkers = scatterpolar({
   type: 'scatterpolar'
 })
 
-Plotly.newPlot('scatterpolarmarkers', [scatterpolarmarkers], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatterpolarmarkers', [scatterpolarmarkers], getLayout(), configuartion)
 
 const scatterpolarmarkersmulti = scatterpolar({
   r: [0.3, 0.1, 0.9, 0.6, 0.7],
@@ -226,7 +234,7 @@ const scatterpolarmarkersmulti = scatterpolar({
   type: 'scatterpolar'
 })
 
-Plotly.newPlot('scatterpolarmarkersmulti', [scatterpolarmarkers, scatterpolarmarkersmulti], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatterpolarmarkersmulti', [scatterpolarmarkers, scatterpolarmarkersmulti], getLayout(), configuartion)
 
 // Type: Box
 
@@ -235,14 +243,14 @@ const boxdefault = box({
   type: 'box'
 })
 
-Plotly.newPlot('box', [boxdefault], cloneDeep(layout), configuartion)
+Plotly.newPlot('box', [boxdefault], getLayout(), configuartion)
 
 const boxdefaultmulti = box({
   y: [9, 2, 1, 10, 4, 1, 11],
   type: 'box'
 })
 
-Plotly.newPlot('boxmulti', [boxdefault, boxdefaultmulti], cloneDeep(layout), configuartion)
+Plotly.newPlot('boxmulti', [boxdefault, boxdefaultmulti], getLayout(), configuartion)
 
 // Type: Scatterternary
 
@@ -258,7 +266,7 @@ const scatterternarylines = scatterternary({
     'Point 11']
 })
 
-Plotly.newPlot('scatterternarylines', [scatterternarylines], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatterternarylines', [scatterternarylines], getLayout(), configuartion)
 
 // Mode: Markers
 
@@ -272,7 +280,7 @@ const scatterternarymarkers = scatterternary({
     'Point 11']
 })
 
-Plotly.newPlot('scatterternarymarkers', [scatterternarymarkers], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatterternarymarkers', [scatterternarymarkers], getLayout(), configuartion)
 
 // Type: Choropleth
 
@@ -286,7 +294,7 @@ const choroplethdefault = choropleth({
   get text () { return this.locations }
 })
 
-Plotly.newPlot('choropleth', [choroplethdefault], cloneDeep(layout), configuartion)
+Plotly.newPlot('choropleth', [choroplethdefault], getLayout(), configuartion)
 
 // Type: Sankey
 
@@ -302,7 +310,7 @@ const sankeydefault = sankey({
   }
 })
 
-Plotly.newPlot('sankey', [sankeydefault], cloneDeep(layout), configuartion)
+Plotly.newPlot('sankey', [sankeydefault], getLayout(), configuartion)
 
 // Type: Parcoords
 
@@ -345,7 +353,7 @@ const scatter3dlines = scatter3d({
   type: 'scatter3d'
 })
 
-Plotly.newPlot('scatter3dlines', [scatter3dlines], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatter3dlines', [scatter3dlines], getLayout(), configuartion)
 
 // Multi
 
@@ -357,7 +365,7 @@ const scatter3dlinesmulti = scatter3d({
   type: 'scatter3d'
 })
 
-Plotly.newPlot('scatter3dlinesmulti', [scatter3dlines, scatter3dlinesmulti], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatter3dlinesmulti', [scatter3dlines, scatter3dlinesmulti], getLayout(), configuartion)
 
 // Fill
 
@@ -370,7 +378,7 @@ const scatter3dlinesfill = scatter3d({
   type: 'scatter3d'
 })
 
-Plotly.newPlot('scatter3dlinesfill', [scatter3dlinesfill], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatter3dlinesfill', [scatter3dlinesfill], getLayout(), configuartion)
 
 // Mode: markers
 
@@ -382,4 +390,4 @@ const scatter3dmarkers = scatter3d({
   type: 'scatter3d'
 })
 
-Plotly.newPlot('scatter3dmarkers', [scatter3dmarkers], cloneDeep(layout), configuartion)
+Plotly.newPlot('scatter3dmarkers', [scatter3dmarkers], getLayout(), configuartion)

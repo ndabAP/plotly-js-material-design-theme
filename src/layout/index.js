@@ -1,4 +1,6 @@
-export const layout = {
+import defaultsDeep from 'lodash.defaultsdeep'
+
+export const layout = custom => defaultsDeep(custom, {
   font: {
     family: 'Roboto, sans-serif'
   },
@@ -113,4 +115,4 @@ export const layout = {
       color: '#757575'
     }
   }
-}
+})
