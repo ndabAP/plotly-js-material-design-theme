@@ -1,6 +1,6 @@
 import defaultsDeep from 'lodash.defaultsdeep'
 
-export const layout = custom => defaultsDeep(custom, {
+export const layout = layout => defaultsDeep(layout, {
   font: {
     family: 'Roboto, sans-serif'
   },
@@ -10,7 +10,8 @@ export const layout = custom => defaultsDeep(custom, {
     color: '#757575'
   },
 
-  colorway: ['#4285F4', '#DB4437', '#F4B400', '#3F51B5', '#E91E63', '#9C27B0', '#673AB7', '#F44336', '#2196F3', '#03A9F4', '#00BCD4', '#009688'],
+  colorway: ['#4285F4', '#DB4437', '#F4B400', '#3F51B5', '#E91E63', '#9C27B0', '#673AB7', '#F44336', '#2196F3',
+    '#03A9F4', '#00BCD4', '#009688'],
 
   xaxis: {
     rangeslider: {
@@ -80,9 +81,14 @@ export const layout = custom => defaultsDeep(custom, {
   },
 
   geo: {
+    rivercolor: '#A2D6FF',
+    lakecolor: '#A2D6FF',
+    showocean: true,
+    oceancolor: '#A2D6FF',
     showcountries: true,
-    countrycolor: '#B4B4B4',
-    coastlinewidth: 1,
+    landcolor: '#EDEBE7',
+    countrycolor: '#D3D3D3',
+    coastlinewidth: 0.5,
     coastlinecolor: '#B4B4B4',
     showframe: false,
     projection: {

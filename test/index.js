@@ -15,10 +15,11 @@ import {
   choropleth,
   scatterternary,
   sankey,
-  parcoords
+  parcoords,
+  scattergeo
 } from '../src'
 
-const configuartion = {displayModeBar: false}
+const configuration = {displayModeBar: false}
 const getLayout = additional => layout({
   autosize: true,
   xaxis: {
@@ -48,7 +49,7 @@ const scatterlines = scatter({
   mode: 'lines'
 })
 
-Plotly.newPlot('scatterlines', [scatterlines], getLayout(), configuartion)
+Plotly.newPlot('scatterlines', [scatterlines], getLayout(), configuration)
 
 // Error bar
 
@@ -64,7 +65,7 @@ const scatterlineserror = scatter({
   mode: 'lines'
 })
 
-Plotly.newPlot('scatterlineserror', [scatterlineserror], getLayout(), configuartion)
+Plotly.newPlot('scatterlineserror', [scatterlineserror], getLayout(), configuration)
 
 const scatterlinesmulti = scatter({
   x: [1, 2, 3, 4],
@@ -75,7 +76,7 @@ const scatterlinesmulti = scatter({
 
 // Fill
 
-Plotly.newPlot('scatterlinesmulti', [scatterlines, scatterlinesmulti], getLayout(), configuartion)
+Plotly.newPlot('scatterlinesmulti', [scatterlines, scatterlinesmulti], getLayout(), configuration)
 
 const scatterlinesfill = scatter({
   x: [1, 2, 3, 4],
@@ -85,7 +86,7 @@ const scatterlinesfill = scatter({
   fill: 'tozeroy'
 })
 
-Plotly.newPlot('scatterlinesfill', [scatterlinesfill], getLayout(), configuartion)
+Plotly.newPlot('scatterlinesfill', [scatterlinesfill], getLayout(), configuration)
 
 // Mode: Markers
 
@@ -96,7 +97,7 @@ const scattermarkers = scatter({
   mode: 'markers'
 })
 
-Plotly.newPlot('scattermarkers', [scattermarkers], getLayout(), configuartion)
+Plotly.newPlot('scattermarkers', [scattermarkers], getLayout(), configuration)
 
 const scattermarkersmarker = scatter({
   x: [1, 2, 3, 4],
@@ -107,7 +108,7 @@ const scattermarkersmarker = scatter({
   }
 })
 
-Plotly.newPlot('scattermarkersmarker', [scattermarkersmarker], getLayout(), configuartion)
+Plotly.newPlot('scattermarkersmarker', [scattermarkersmarker], getLayout(), configuration)
 
 // Type: Bar
 
@@ -117,7 +118,7 @@ const bardefault = bar({
   type: 'bar'
 })
 
-Plotly.newPlot('bar', [bardefault], getLayout(), configuartion)
+Plotly.newPlot('bar', [bardefault], getLayout(), configuration)
 
 const bardefaultmulti = bar({
   x: [1, 2, 3, 4],
@@ -125,7 +126,7 @@ const bardefaultmulti = bar({
   type: 'bar'
 })
 
-Plotly.newPlot('bar-multi', [bardefault, bardefaultmulti], getLayout(), configuartion)
+Plotly.newPlot('bar-multi', [bardefault, bardefaultmulti], getLayout(), configuration)
 
 // Type: Pie
 
@@ -135,7 +136,7 @@ const piedefault = pie({
   type: 'pie'
 })
 
-Plotly.newPlot('pie', [piedefault], getLayout(), configuartion)
+Plotly.newPlot('pie', [piedefault], getLayout(), configuration)
 
 // Type: Histogram
 
@@ -144,7 +145,7 @@ const histogramdefault = histogram({
   type: 'histogram'
 })
 
-Plotly.newPlot('histogram', [histogramdefault], getLayout({bargroupgap: 0}), configuartion)
+Plotly.newPlot('histogram', [histogramdefault], getLayout({bargroupgap: 0}), configuration)
 
 // Type: Histogram 2d
 
@@ -154,7 +155,7 @@ const histogram2ddefault = histogram2d({
   type: 'histogram2d'
 })
 
-Plotly.newPlot('histogram2d', [histogram2ddefault], getLayout(), configuartion)
+Plotly.newPlot('histogram2d', [histogram2ddefault], getLayout(), configuration)
 
 // Type: OHLC
 
@@ -168,7 +169,7 @@ const ohlcdefault = ohlc({
   showlegend: false
 })
 
-Plotly.newPlot('ohlc', [ohlcdefault], getLayout(), configuartion)
+Plotly.newPlot('ohlc', [ohlcdefault], getLayout(), configuration)
 
 // Type: Candlestick
 
@@ -183,7 +184,7 @@ const candlestickdefault = candlestick({
   showlegend: false
 })
 
-Plotly.newPlot('candlestick', [candlestickdefault], getLayout(), configuartion)
+Plotly.newPlot('candlestick', [candlestickdefault], getLayout(), configuration)
 
 // Type: Violin
 
@@ -192,7 +193,7 @@ const violindefault = violin({
   y: [4, 6, 9, 2, 9, 111, 90, 80, 21, 1, 2]
 })
 
-Plotly.newPlot('violin', [violindefault], getLayout(), configuartion)
+Plotly.newPlot('violin', [violindefault], getLayout(), configuration)
 
 // Type: Scatterpolar
 
@@ -205,7 +206,7 @@ const scatterpolarlines = scatterpolar({
   type: 'scatterpolar'
 })
 
-Plotly.newPlot('scatterpolarlines', [scatterpolarlines], getLayout(), configuartion)
+Plotly.newPlot('scatterpolarlines', [scatterpolarlines], getLayout(), configuration)
 
 const scatterpolarlinesmulti = scatterpolar({
   r: [0.6, 0.2, 0.8, 0.9, 0.1],
@@ -214,7 +215,7 @@ const scatterpolarlinesmulti = scatterpolar({
   type: 'scatterpolar'
 })
 
-Plotly.newPlot('scatterpolarlinesmulti', [scatterpolarlines, scatterpolarlinesmulti], getLayout(), configuartion)
+Plotly.newPlot('scatterpolarlinesmulti', [scatterpolarlines, scatterpolarlinesmulti], getLayout(), configuration)
 
 // Mode: Markers
 
@@ -225,7 +226,7 @@ const scatterpolarmarkers = scatterpolar({
   type: 'scatterpolar'
 })
 
-Plotly.newPlot('scatterpolarmarkers', [scatterpolarmarkers], getLayout(), configuartion)
+Plotly.newPlot('scatterpolarmarkers', [scatterpolarmarkers], getLayout(), configuration)
 
 const scatterpolarmarkersmulti = scatterpolar({
   r: [0.3, 0.1, 0.9, 0.6, 0.7],
@@ -234,7 +235,7 @@ const scatterpolarmarkersmulti = scatterpolar({
   type: 'scatterpolar'
 })
 
-Plotly.newPlot('scatterpolarmarkersmulti', [scatterpolarmarkers, scatterpolarmarkersmulti], getLayout(), configuartion)
+Plotly.newPlot('scatterpolarmarkersmulti', [scatterpolarmarkers, scatterpolarmarkersmulti], getLayout(), configuration)
 
 // Type: Box
 
@@ -243,14 +244,14 @@ const boxdefault = box({
   type: 'box'
 })
 
-Plotly.newPlot('box', [boxdefault], getLayout(), configuartion)
+Plotly.newPlot('box', [boxdefault], getLayout(), configuration)
 
 const boxdefaultmulti = box({
   y: [9, 2, 1, 10, 4, 1, 11],
   type: 'box'
 })
 
-Plotly.newPlot('boxmulti', [boxdefault, boxdefaultmulti], getLayout(), configuartion)
+Plotly.newPlot('boxmulti', [boxdefault, boxdefaultmulti], getLayout(), configuration)
 
 // Type: Scatterternary
 
@@ -266,7 +267,7 @@ const scatterternarylines = scatterternary({
     'Point 11']
 })
 
-Plotly.newPlot('scatterternarylines', [scatterternarylines], getLayout(), configuartion)
+Plotly.newPlot('scatterternarylines', [scatterternarylines], getLayout(), configuration)
 
 // Mode: Markers
 
@@ -280,7 +281,7 @@ const scatterternarymarkers = scatterternary({
     'Point 11']
 })
 
-Plotly.newPlot('scatterternarymarkers', [scatterternarymarkers], getLayout(), configuartion)
+Plotly.newPlot('scatterternarymarkers', [scatterternarymarkers], getLayout(), configuration)
 
 // Type: Choropleth
 
@@ -294,7 +295,77 @@ const choroplethdefault = choropleth({
   get text () { return this.locations }
 })
 
-Plotly.newPlot('choropleth', [choroplethdefault], getLayout(), configuartion)
+Plotly.newPlot('choropleth', [choroplethdefault], getLayout(), configuration)
+
+// Type: Scattergeo
+
+// Mode: Markers
+
+const scattergeomarkers = scattergeo({
+  type: 'scattergeo',
+  mode: 'markers',
+  text: [
+    'Montreal', 'Toronto', 'Vancouver', 'Calgary', 'Edmonton',
+    'Ottawa', 'Halifax', 'Victoria', 'Winnepeg', 'Regina'
+  ],
+  lon: [
+    -73.57, -79.24, -123.06, -114.1, -113.28,
+    -75.43, -63.57, -123.21, -97.13, -104.6
+  ],
+  lat: [
+    45.5, 43.4, 49.13, 51.1, 53.34, 45.24,
+    44.64, 48.25, 49.89, 50.45
+  ]
+})
+
+Plotly.newPlot('scattergeomarkers', [scattergeomarkers], getLayout({
+  geo: {
+    scope: 'north america',
+    lonaxis: {
+      'range': [-130, -55]
+    },
+    lataxis: {
+      'range': [40, 70]
+    },
+    showrivers: true,
+    showlakes: true,
+    showland: true
+  }
+}), configuration)
+
+// Mode: Lines
+
+const scattergeolines = scattergeo({
+  type: 'scattergeo',
+  mode: 'lines',
+  text: [
+    'Montreal', 'Toronto', 'Vancouver', 'Calgary', 'Edmonton',
+    'Ottawa', 'Halifax', 'Victoria', 'Winnepeg', 'Regina'
+  ],
+  lon: [
+    -73.57, -79.24, -123.06, -114.1, -113.28,
+    -75.43, -63.57, -123.21, -97.13, -104.6
+  ],
+  lat: [
+    45.5, 43.4, 49.13, 51.1, 53.34, 45.24,
+    44.64, 48.25, 49.89, 50.45
+  ]
+})
+
+Plotly.newPlot('scattergeolines', [scattergeolines], getLayout({
+  geo: {
+    scope: 'north america',
+    lonaxis: {
+      'range': [-130, -55]
+    },
+    lataxis: {
+      'range': [40, 70]
+    },
+    showrivers: true,
+    showlakes: true,
+    showland: true
+  }
+}), configuration)
 
 // Type: Sankey
 
@@ -310,7 +381,7 @@ const sankeydefault = sankey({
   }
 })
 
-Plotly.newPlot('sankey', [sankeydefault], getLayout(), configuartion)
+Plotly.newPlot('sankey', [sankeydefault], getLayout(), configuration)
 
 // Type: Parcoords
 
@@ -339,7 +410,7 @@ const parcoordsdefault = parcoords({
   }]
 })
 
-Plotly.newPlot('parcoords', [parcoordsdefault], getLayout(), configuartion)
+Plotly.newPlot('parcoords', [parcoordsdefault], getLayout(), configuration)
 
 // Type: Scatter 3d
 
@@ -353,7 +424,7 @@ const scatter3dlines = scatter3d({
   type: 'scatter3d'
 })
 
-Plotly.newPlot('scatter3dlines', [scatter3dlines], getLayout(), configuartion)
+Plotly.newPlot('scatter3dlines', [scatter3dlines], getLayout(), configuration)
 
 // Multi
 
@@ -365,7 +436,7 @@ const scatter3dlinesmulti = scatter3d({
   type: 'scatter3d'
 })
 
-Plotly.newPlot('scatter3dlinesmulti', [scatter3dlines, scatter3dlinesmulti], getLayout(), configuartion)
+Plotly.newPlot('scatter3dlinesmulti', [scatter3dlines, scatter3dlinesmulti], getLayout(), configuration)
 
 // Fill
 
@@ -378,7 +449,7 @@ const scatter3dlinesfill = scatter3d({
   type: 'scatter3d'
 })
 
-Plotly.newPlot('scatter3dlinesfill', [scatter3dlinesfill], getLayout(), configuartion)
+Plotly.newPlot('scatter3dlinesfill', [scatter3dlinesfill], getLayout(), configuration)
 
 // Mode: markers
 
@@ -390,4 +461,4 @@ const scatter3dmarkers = scatter3d({
   type: 'scatter3d'
 })
 
-Plotly.newPlot('scatter3dmarkers', [scatter3dmarkers], getLayout(), configuartion)
+Plotly.newPlot('scatter3dmarkers', [scatter3dmarkers], getLayout(), configuration)
