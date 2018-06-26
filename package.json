@@ -5,6 +5,7 @@
   "main": "dist/library.min.js",
   "scripts": {
     "build": "rm -rf docs/* && webpack --env build",
+    "lint": "./node_modules/.bin/eslint src/**",
     "dev": "webpack-dev-server --inline --hot --env dev"
   },
   "repository": {
