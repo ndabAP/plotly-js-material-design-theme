@@ -45,7 +45,7 @@
     "ify-loader": "^1.1.0",
     "lodash": "^4.17.5",
     "lodash.defaultsdeep": "latest",
-    "plotly.js": "^1.38.2",
+    "plotly.js": "^1.38.3",
     "reload-html-webpack-plugin": "^0.1.2",
     "transform-loader": "^0.2.4",
     "uglifyjs-webpack-plugin": "^1.2.4",
