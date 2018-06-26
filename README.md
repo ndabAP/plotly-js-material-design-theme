@@ -44,30 +44,32 @@ Plotly.newPlot('scatter-lines', [scatterLines], layout({title: 'Chart'}))
 
 ## Charts
 
-As of version 1.37.1, Plotly.js supports 31 chart types. However, chart types can be classified by additional 
-subproperties, e. g. `mode` or `fillcolor`. The following table lists the currently supported charts by this library.
+Plotly.js supports a variety of chart types. However, chart types can be classified by additional subproperties, e. g. 
+`mode` or `fillcolor`. There is a configuration for every mode. The following table lists currently supported charts by 
+this library.
 
-| Type            | Mode        |
-|-----------------|-------------|
-| `scatter`       | `lines`     |
-|                 | `markers`   |
-| `bar`           |             |
-| `pie`           |             |
-| `box`           |             |
-| `choropleth`    |             |
-| `scatterternary`| `lines`     |
-|                 | `markers`   |
-| `histogram`     |             |
-| `histogram2d`   |             |
-| `violin`        |             |
-| `ohlc`          |             |
-| `candlestick`   |             |
-| `sankey`        |             |
-| `paarcords`     |             |
-| `scatterpolar`  | `lines`     |
-|                 | `markers`   |
-| `scatter3d`     | `lines`     |
-|                 | `markers`   |   
+| Type                  | Mode        |
+|-----------------------|-------------|
+| `scatter`             | `lines`     |
+|                       | `markers`   |
+| `bar`                 |             |
+| `pie`                 |             |
+| `box`                 |             |
+| `choropleth`          |             |
+| `scatterternary`      | `lines`     |
+|                       | `markers`   |
+| `histogram`           |             |
+| `histogram2d`         |             |
+| `violin`              |             |
+| `ohlc`                |             |
+| `candlestick`         |             |
+| `sankey`              |             |
+| `paarcords`           |             |
+| `scatterpolar`        | `lines`     |
+|                       | `markers`   |
+| `scatter3d`           | `lines`     |
+|                       | `markers`   |   
+| `histogram2dcontour`  |             |
 
 ## Author
 

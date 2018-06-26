@@ -16,7 +16,8 @@ import {
   scatterternary,
   sankey,
   parcoords,
-  scattergeo
+  scattergeo,
+  histogram2dcontour
 } from '../src'
 
 const configuration = {displayModeBar: false}
@@ -295,7 +296,7 @@ const choroplethdefault = choropleth({
   get text () { return this.locations }
 })
 
-Plotly.newPlot('choropleth', [choroplethdefault], getLayout(), configuration)
+Plotly.newPlot('choropleth', [choroplethdefault], getLayout({geo: {showocean: false}}), configuration)
 
 // Type: Scattergeo
 
@@ -462,3 +463,13 @@ const scatter3dmarkers = scatter3d({
 })
 
 Plotly.newPlot('scatter3dmarkers', [scatter3dmarkers], getLayout(), configuration)
+
+// Type: Histogram 2-D contour
+
+const histogram2dcontourdefault = histogram2dcontour({
+  x: [1, 2, 3, 4, 5],
+  y: [9, 28, 1, 3, 4, 10],
+  type: 'histogram2dcontour'
+})
+
+Plotly.newPlot('histogram2dcontour', [histogram2dcontourdefault], getLayout(), configuration)
