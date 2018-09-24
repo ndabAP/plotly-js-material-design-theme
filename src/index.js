@@ -1,6 +1,7 @@
 export { layout } from './layout/index'
 export { scatter } from './types/scatter'
 export { bar } from './types/bar'
+export { carpet } from './types/carpet'
 export { pie } from './types/pie'
 export { histogram } from './types/histogram'
 export { histogram2d } from './types/histogram2d'

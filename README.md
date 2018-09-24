@@ -50,11 +50,13 @@ this library.
 
 | Type                  | Mode        |
 |-----------------------|-------------|
+| `bar`                 |             |
+| `box`                 |             |
+| `candlestick`         |             |
+| `carpet`              |             |
 | `scatter`             | `lines`     |
 |                       | `markers`   |
-| `bar`                 |             |
 | `pie`                 |             |
-| `box`                 |             |
 | `choropleth`          |             |
 | `scatterternary`      | `lines`     |
 |                       | `markers`   |
@@ -62,7 +64,6 @@ this library.
 | `histogram2d`         |             |
 | `violin`              |             |
 | `ohlc`                |             |
-| `candlestick`         |             |
 | `sankey`              |             |
 | `paarcords`           |             |
 | `scatterpolar`        | `lines`     |

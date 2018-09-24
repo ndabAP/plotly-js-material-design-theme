@@ -3,6 +3,7 @@ import {
   layout,
   scatter,
   bar,
+  carpet,
   pie,
   histogram,
   histogram2d,
@@ -128,6 +129,17 @@ const bardefaultmulti = bar({
 })
 
 Plotly.newPlot('bar-multi', [bardefault, bardefaultmulti], getLayout(), configuration)
+
+// Type: Carpet
+
+const carpetdefault = carpet({
+  type: 'carpet',
+  a: [4, 4, 4, 4.5, 4.5, 4.5, 5, 5, 5, 6, 6, 6],
+  b: [1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3],
+  y: [2, 3.5, 4, 3, 4.5, 5, 5.5, 6.5, 7.5, 8, 8.5, 10]
+})
+
+Plotly.newPlot('carpet', [carpetdefault], getLayout(), configuration)
 
 // Type: Pie
 
