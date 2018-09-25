@@ -5,6 +5,7 @@ import {
   bar,
   carpet,
   cone,
+  contour,
   pie,
   histogram,
   histogram2d,
@@ -141,6 +142,34 @@ const carpetdefault = carpet({
 })
 
 Plotly.newPlot('carpet', [carpetdefault], getLayout(), configuration)
+
+// Type: contour
+
+const size = 100
+let x = new Array(size)
+let y = new Array(size)
+let z = new Array(size)
+
+for (let i = 0; i < size; i++) {
+  x[i] = y[i] = -2 * Math.PI + 4 * Math.PI * i / size
+  z[i] = new Array(size)
+}
+
+for (let i = 0; i < size; i++) {
+  for (let j = 0; j < size; j++) {
+    let r2 = x[i] * x[i] + y[j] * y[j]
+    z[i][j] = Math.sin(x[i]) * Math.cos(y[j]) * Math.sin(r2) / Math.log(r2 + 1)
+  }
+}
+
+const contourdefault = contour({
+  z,
+  x,
+  y,
+  type: 'contour'
+})
+
+Plotly.newPlot('contour', [contourdefault], getLayout(), configuration)
 
 // Type: cone
 

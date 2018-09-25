@@ -56,6 +56,7 @@ this library.
 | `carpet`              |             |
 | `choropleth`          |             |
 | `cone`                |             |
+| `contour`             |             |
 | `scatter`             | `lines`     |
 |                       | `markers`   |
 | `pie`                 |             |
