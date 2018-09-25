@@ -55,6 +55,7 @@ this library.
 | `candlestick`         |             |
 | `carpet`              |             |
 | `choropleth`          |             |
+| `cone`                |             |
 | `scatter`             | `lines`     |
 |                       | `markers`   |
 | `pie`                 |             |
