@@ -54,10 +54,10 @@ this library.
 | `box`                 |             |
 | `candlestick`         |             |
 | `carpet`              |             |
+| `choropleth`          |             |
 | `scatter`             | `lines`     |
 |                       | `markers`   |
 | `pie`                 |             |
-| `choropleth`          |             |
 | `scatterternary`      | `lines`     |
 |                       | `markers`   |
 | `histogram`           |             |

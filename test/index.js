@@ -4,6 +4,7 @@ import {
   scatter,
   bar,
   carpet,
+  cone,
   pie,
   histogram,
   histogram2d,
@@ -140,6 +141,20 @@ const carpetdefault = carpet({
 })
 
 Plotly.newPlot('carpet', [carpetdefault], getLayout(), configuration)
+
+// Type: cone
+
+const conedefault = cone({
+  type: 'cone',
+  x: [1],
+  y: [1],
+  z: [1],
+  u: [1],
+  v: [1],
+  w: [0]
+})
+
+Plotly.newPlot('cone', [conedefault], getLayout(), configuration)
 
 // Type: Pie
 
