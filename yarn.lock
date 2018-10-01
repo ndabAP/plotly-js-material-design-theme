@@ -103,27 +103,6 @@
   dependencies:
     commander "^2.15.1"
 
-"@etpinard/gl-text@^1.1.6":
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/@etpinard/gl-text/-/gl-text-1.1.6.tgz#985791e31ef5ae591a2fd8d4401de64d34080196"
-  dependencies:
-    color-normalize "^1.1.0"
-    css-font "^1.2.0"
-    detect-kerning "^2.1.2"
-    es6-weak-map "^2.0.2"
-    flatten-vertex-data "^1.0.2"
-    font-atlas "^2.1.0"
-    font-measure "^1.2.2"
-    gl-util "^3.0.7"
-    is-plain-obj "^1.1.0"
-    object-assign "^4.1.1"
-    parse-rect "^1.2.0"
-    parse-unit "^1.0.1"
-    pick-by-alias "^1.2.0"
-    regl "^1.3.6"
-    to-px "^1.0.1"
-    typedarray-pool "^1.1.0"
-
 "@mapbox/geojson-area@0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@mapbox/geojson-area/-/geojson-area-0.2.2.tgz#18d7814aa36bf23fbbcc379f8e26a22927debf10"
@@ -1920,6 +1899,14 @@ color-normalize@^1.0.0, color-normalize@^1.0.3, color-normalize@^1.1.0:
     color-rgba "^2.1.0"
     dtype "^2.0.0"
 
+color-normalize@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/color-normalize/-/color-normalize-1.3.0.tgz#fcf1f822196b863416fc701350dff8d1e8fdebe1"
+  dependencies:
+    clamp "^1.0.1"
+    color-rgba "^2.1.0"
+    dtype "^2.0.0"
+
 color-parse@^1.2.0, color-parse@^1.3.7:
   version "1.3.7"
   resolved "https://registry.yarnpkg.com/color-parse/-/color-parse-1.3.7.tgz#34ac4fb0782b992d3614417b60896c4884771b26"
@@ -1928,7 +1915,7 @@ color-parse@^1.2.0, color-parse@^1.3.7:
     defined "^1.0.0"
     is-plain-obj "^1.1.0"
 
-color-rgba@^2.0.0, color-rgba@^2.1.0:
+color-rgba@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/color-rgba/-/color-rgba-2.1.0.tgz#d6f91376b745a76506558ec17b3390e721892ee9"
   dependencies:
@@ -3875,6 +3862,28 @@ gl-surface3d@^1.3.5:
     surface-nets "^1.0.2"
     typedarray-pool "^1.0.0"
 
+gl-text@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/gl-text/-/gl-text-1.1.6.tgz#1c9aa1e8dbbb9b63067b23a1359bc56ad63922ab"
+  dependencies:
+    bit-twiddle "^1.0.2"
+    color-normalize "^1.1.0"
+    css-font "^1.2.0"
+    detect-kerning "^2.1.2"
+    es6-weak-map "^2.0.2"
+    flatten-vertex-data "^1.0.2"
+    font-atlas "^2.1.0"
+    font-measure "^1.2.2"
+    gl-util "^3.0.7"
+    is-plain-obj "^1.1.0"
+    object-assign "^4.1.1"
+    parse-rect "^1.2.0"
+    parse-unit "^1.0.1"
+    pick-by-alias "^1.2.0"
+    regl "^1.3.6"
+    to-px "^1.0.1"
+    typedarray-pool "^1.1.0"
+
 gl-texture2d@^2.0.0, gl-texture2d@^2.0.2, gl-texture2d@^2.0.8:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/gl-texture2d/-/gl-texture2d-2.1.0.tgz#ff6824e7e7c31a8ba6fdcdbe9e5c695d7e2187c7"
@@ -4137,6 +4146,27 @@ glslify@^6.0.2, glslify@^6.1.0, glslify@^6.1.1:
     concat-stream "^1.5.2"
     duplexify "^3.4.5"
     falafel "^2.0.0"
+    from2 "^2.3.0"
+    glsl-resolve "0.0.1"
+    glsl-token-whitespace-trim "^1.0.0"
+    glslify-bundle "^5.0.0"
+    glslify-deps "^1.2.5"
+    minimist "^1.2.0"
+    resolve "^1.1.5"
+    stack-trace "0.0.9"
+    static-eval "^2.0.0"
+    tape "^4.6.0"
+    through2 "^2.0.1"
+    xtend "^4.0.0"
+
+glslify@^6.3.1:
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/glslify/-/glslify-6.3.1.tgz#af74f4a47497603f21498ad14172396cddc8062f"
+  dependencies:
+    bl "^1.0.0"
+    concat-stream "^1.5.2"
+    duplexify "^3.4.5"
+    falafel "^2.1.0"
     from2 "^2.3.0"
     glsl-resolve "0.0.1"
     glsl-token-whitespace-trim "^1.0.0"
@@ -6477,17 +6507,15 @@ planar-graph-to-polyline@^1.0.0:
     uniq "^1.0.0"
 
 plotly.js@^1.39.2:
-  version "1.39.3"
-  resolved "https://registry.yarnpkg.com/plotly.js/-/plotly.js-1.39.3.tgz#8e8071c6914d7cbf198afc884c74cc1cc27c6433"
+  version "1.41.3"
+  resolved "https://registry.yarnpkg.com/plotly.js/-/plotly.js-1.41.3.tgz#6b1ed2a6c25de6b328ffe59bba79afcde1108cf7"
   dependencies:
     "3d-view" "^2.0.0"
-    "@etpinard/gl-text" "^1.1.6"
     "@plotly/d3-sankey" "^0.5.0"
     alpha-shape "^1.0.0"
     array-range "^1.0.1"
     canvas-fit "^1.5.0"
-    color-normalize "^1.0.3"
-    color-rgba "^2.0.0"
+    color-normalize "^1.3.0"
     convex-hull "^1.0.3"
     country-regex "^1.1.0"
     d3 "^3.5.12"
@@ -6511,7 +6539,8 @@ plotly.js@^1.39.2:
     gl-spikes2d "^1.0.1"
     gl-streamtube3d "^1.0.0"
     gl-surface3d "^1.3.5"
-    glslify "^6.1.1"
+    gl-text "^1.1.6"
+    glslify "^6.3.1"
     has-hover "^1.0.1"
     has-passive-events "^1.0.0"
     mapbox-gl "0.45.0"
@@ -6525,11 +6554,11 @@ plotly.js@^1.39.2:
     ndarray-ops "^1.2.2"
     point-cluster "^3.1.4"
     polybooljs "^1.2.0"
-    regl "^1.3.6"
+    regl "^1.3.7"
     regl-error2d "^2.0.5"
-    regl-line2d "^3.0.9"
-    regl-scatter2d "^3.0.4"
-    regl-splom "^1.0.3"
+    regl-line2d "^3.0.11"
+    regl-scatter2d "^3.0.6"
+    regl-splom "^1.0.4"
     right-now "^1.0.0"
     robust-orientation "^1.1.3"
     sane-topojson "^2.0.0"
@@ -7028,9 +7057,9 @@ regl-error2d@^2.0.5:
     to-float32 "^1.0.0"
     update-diff "^1.0.2"
 
-regl-line2d@^3.0.9:
-  version "3.0.9"
-  resolved "https://registry.yarnpkg.com/regl-line2d/-/regl-line2d-3.0.9.tgz#9cbf9d35ac8dee8d220432c67958764a3aece7fd"
+regl-line2d@^3.0.11:
+  version "3.0.11"
+  resolved "https://registry.yarnpkg.com/regl-line2d/-/regl-line2d-3.0.11.tgz#d52e6e48f3658a2d8aaaa1d5eefd316e802bda35"
   dependencies:
     array-bounds "^1.0.0"
     array-normalize "^1.1.3"
@@ -7039,15 +7068,15 @@ regl-line2d@^3.0.9:
     earcut "^2.1.1"
     es6-weak-map "^2.0.2"
     flatten-vertex-data "^1.0.0"
-    glslify "^6.1.0"
+    glslify "^6.3.1"
     object-assign "^4.1.1"
     parse-rect "^1.2.0"
     pick-by-alias "^1.1.0"
     to-float32 "^1.0.0"
 
-regl-scatter2d@^3.0.0, regl-scatter2d@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/regl-scatter2d/-/regl-scatter2d-3.0.4.tgz#139743a0077637e1621f313e0b0d312aeca51209"
+regl-scatter2d@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/regl-scatter2d/-/regl-scatter2d-3.0.6.tgz#ee03d18803b114fd3569115a7bf848fdd44e8d4d"
   dependencies:
     array-range "^1.0.1"
     array-rearrange "^2.2.2"
@@ -7065,9 +7094,9 @@ regl-scatter2d@^3.0.0, regl-scatter2d@^3.0.4:
     to-float32 "^1.0.0"
     update-diff "^1.1.0"
 
-regl-splom@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/regl-splom/-/regl-splom-1.0.3.tgz#f2623f69cda74895ab37b192f79a42043bb1e93b"
+regl-splom@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/regl-splom/-/regl-splom-1.0.4.tgz#5f2de70faf68e00bdf0c98b2de739ec7e07f25a8"
   dependencies:
     array-bounds "^1.0.1"
     array-range "^1.0.1"
@@ -7080,9 +7109,9 @@ regl-splom@^1.0.3:
     pick-by-alias "^1.2.0"
     point-cluster "^1.0.2"
     raf "^3.4.0"
-    regl-scatter2d "^3.0.0"
+    regl-scatter2d "^3.0.6"
 
-regl@^1.3.6:
+regl@^1.3.6, regl@^1.3.7:
   version "1.3.7"
   resolved "https://registry.yarnpkg.com/regl/-/regl-1.3.7.tgz#0742755dead1aa230f08b79b98baea1048a2b80a"
 
