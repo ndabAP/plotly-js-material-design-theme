@@ -49,7 +49,7 @@
     "plotly.js": "^1.39.2",
     "reload-html-webpack-plugin": "^0.1.2",
     "transform-loader": "^0.2.4",
-    "uglifyjs-webpack-plugin": "^1.2.4",
+    "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^3.10.0",
     "webpack-cli": "^2.0.13",
     "webpack-dev-server": "^2.11.2",
