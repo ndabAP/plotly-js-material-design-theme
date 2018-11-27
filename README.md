@@ -3,8 +3,7 @@
 > Built on top of d3.js and stack.gl, plotly.js is a high-level, declarative charting library. plotly.js ships with 20 
 chart types, including 3D charts, statistical graphs, and SVG maps. 
 
-This library introduces the Material Design guidelines to Plotly.js. **Warning**: This project is currently not stable 
-and the API might change in the future. See the current 
+This library introduces the Material Design guidelines to Plotly.js. See the current 
 [demo](https://ndabap.github.io/plotly-js-material-design-theme/).
 
 ## Features
@@ -26,7 +25,7 @@ configuration will be recursively merged with the one creating Material Design, 
 precedence.
 
 ```js
-import {layout, scatter} from 'plotly-js-material-design-theme'
+import { layout, scatter } from 'plotly-js-material-design-theme'
 ```
 
 Now setup your chart as usual but make sure you merge it with the imported one.
@@ -39,7 +38,7 @@ const scatterLines = scatter({
   mode: 'lines'
 })
 
-Plotly.newPlot('scatter-lines', [scatterLines], layout({title: 'Chart'}))
+Plotly.newPlot('scatter-lines', [scatterLines], layout({ title: 'Chart' }))
 ```
 
 ## Charts
@@ -57,22 +56,22 @@ this library.
 | `choropleth`          |             |
 | `cone`                |             |
 | `contour`             |             |
-| `scatter`             | `lines`     |
-|                       | `markers`   |
-| `pie`                 |             |
-| `scatterternary`      | `lines`     |
-|                       | `markers`   |
 | `histogram`           |             |
 | `histogram2d`         |             |
-| `violin`              |             |
+| `histogram2dcontour`  |             |
 | `ohlc`                |             |
-| `sankey`              |             |
 | `paarcords`           |             |
+| `pie`                 |             |
+| `sankey`              |             |
+| `scatter`             | `lines`     |
+|                       | `markers`   |
 | `scatterpolar`        | `lines`     |
+| `scatterternary`      | `lines`     |
+|                       | `markers`   |
 |                       | `markers`   |
 | `scatter3d`           | `lines`     |
 |                       | `markers`   |   
-| `histogram2dcontour`  |             |
+| `violin`              |             |
 
 ## Author
 
