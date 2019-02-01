@@ -6,6 +6,7 @@ import {
   carpet,
   cone,
   contour,
+  heatmap,
   pie,
   histogram,
   histogram2d,
@@ -170,6 +171,15 @@ const contourdefault = contour({
 })
 
 Plotly.newPlot('contour', [contourdefault], getLayout(), configuration)
+
+// Type: heatmap
+
+const heatmapdefault = heatmap({
+  z: [[1, 20, 30], [20, 1, 60], [30, 60, 1]],
+  type: 'heatmap'
+})
+
+Plotly.newPlot('heatmap', [heatmapdefault], getLayout(), configuration)
 
 // Type: cone
 

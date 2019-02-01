@@ -1,12 +1,12 @@
 {
   "name": "plotly-js-material-design-theme",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Plotly.js charts with Material Design theme.",
   "main": "dist/library.min.js",
   "scripts": {
+    "dev": "webpack-dev-server --inline --hot --env dev",
     "build": "rm -rf docs/* && webpack --env build",
-    "lint": "./node_modules/.bin/eslint src/**",
-    "dev": "webpack-dev-server --inline --hot --env dev"
+    "lint": "./node_modules/.bin/eslint src/**"
   },
   "repository": {
     "type": "git",
