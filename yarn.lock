@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"3d-view-controls@^2.2.0":
+"3d-view-controls@^2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/3d-view-controls/-/3d-view-controls-2.2.2.tgz#7173fc197e9e7e4dbc63213438467047dbc84fa2"
   dependencies:
@@ -176,7 +176,7 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
-a-big-triangle@^1.0.0:
+a-big-triangle@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/a-big-triangle/-/a-big-triangle-1.0.3.tgz#eefd30b02a8f525e8b1f72bb6bb1b0c16751c794"
   dependencies:
@@ -1470,7 +1470,7 @@ buble@^0.19.3:
     os-homedir "^1.0.1"
     vlq "^1.0.0"
 
-bubleify@^1.0.0, bubleify@^1.1.0:
+bubleify@^1.0.0, bubleify@^1.1.0, bubleify@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/bubleify/-/bubleify-1.2.0.tgz#17a65b6b70160c4d81a06f28fc2a461621415ea9"
   dependencies:
@@ -1869,7 +1869,7 @@ collection-visit@^1.0.0:
     map-visit "^1.0.0"
     object-visit "^1.0.0"
 
-color-alpha@^1.0.2:
+color-alpha@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/color-alpha/-/color-alpha-1.0.3.tgz#318e33edb215bd695d51cae4922640a44107e959"
   dependencies:
@@ -1895,15 +1895,7 @@ color-name@^1.0.0:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
 
-color-normalize@^1.0.0, color-normalize@^1.0.3, color-normalize@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/color-normalize/-/color-normalize-1.1.0.tgz#d54b1b8da88c6aae5cdb7f37c0b738dacecb3b7b"
-  dependencies:
-    clamp "^1.0.1"
-    color-rgba "^2.1.0"
-    dtype "^2.0.0"
-
-color-normalize@^1.3.0:
+color-normalize@^1.0.0, color-normalize@^1.0.3, color-normalize@^1.1.0, color-normalize@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/color-normalize/-/color-normalize-1.3.0.tgz#fcf1f822196b863416fc701350dff8d1e8fdebe1"
   dependencies:
@@ -3255,7 +3247,7 @@ extract-frustum-planes@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/extract-frustum-planes/-/extract-frustum-planes-1.0.0.tgz#97d5703ff0564c8c3c6838cac45f9e7bc52c9ef5"
 
-falafel@^2.0.0, falafel@^2.1.0:
+falafel@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/falafel/-/falafel-2.1.0.tgz#96bb17761daba94f46d001738b3cedf3a67fe06c"
   dependencies:
@@ -3616,23 +3608,23 @@ github-username@^4.0.0:
   dependencies:
     gh-got "^6.0.0"
 
-gl-axes3d@^1.4.2:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/gl-axes3d/-/gl-axes3d-1.4.2.tgz#177dab0da37ebcf41f2fa8eb8f8fd24fec490862"
+gl-axes3d@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/gl-axes3d/-/gl-axes3d-1.4.4.tgz#741ac7c6875048c31372461e144435cc12c2dc7e"
   dependencies:
-    bit-twiddle "^1.0.0"
+    bit-twiddle "^1.0.2"
     dup "^1.0.0"
     extract-frustum-planes "^1.0.0"
-    gl-buffer "^2.0.3"
-    gl-mat4 "^1.0.1"
-    gl-shader "^4.0.4"
+    gl-buffer "^2.1.2"
+    gl-mat4 "^1.2.0"
+    gl-shader "^4.2.1"
     gl-state "^1.0.0"
-    gl-vao "^1.1.1"
+    gl-vao "^1.3.0"
     gl-vec4 "^1.0.1"
-    glslify "^6.1.0"
+    glslify "^7.0.0"
     robust-orientation "^1.1.3"
     split-polygon "^1.0.0"
-    vectorize-text "^3.2.0"
+    vectorize-text "^3.2.1"
 
 gl-buffer@^2.0.3, gl-buffer@^2.0.6, gl-buffer@^2.0.8, gl-buffer@^2.1.1, gl-buffer@^2.1.2:
   version "2.1.2"
@@ -3642,45 +3634,45 @@ gl-buffer@^2.0.3, gl-buffer@^2.0.6, gl-buffer@^2.0.8, gl-buffer@^2.1.1, gl-buffe
     ndarray-ops "^1.1.0"
     typedarray-pool "^1.0.0"
 
-gl-cone3d@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/gl-cone3d/-/gl-cone3d-1.2.1.tgz#d2ab6fe10750302c43519d2d319ffa7dd0857fa6"
+gl-cone3d@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/gl-cone3d/-/gl-cone3d-1.2.2.tgz#f0b2bbcf478924453e4c1310f07a3cde3b61c50b"
   dependencies:
     gl-shader "^4.2.1"
-    gl-vec3 "^1.0.0"
+    gl-vec3 "^1.1.3"
     glsl-inverse "^1.0.0"
-    glsl-out-of-range "^1.0.3"
-    glslify "^6.1.0"
+    glsl-out-of-range "^1.0.4"
+    glslify "^7.0.0"
 
 gl-constants@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/gl-constants/-/gl-constants-1.0.0.tgz#597a504e364750ff50253aa35f8dea7af4a5d233"
 
-gl-contour2d@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/gl-contour2d/-/gl-contour2d-1.1.4.tgz#0d4fc9b59de4ae3e045218d3f67c7a33f9c93428"
+gl-contour2d@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/gl-contour2d/-/gl-contour2d-1.1.5.tgz#77d02f04500d969fd7f61e29b00f01f211963a11"
   dependencies:
     binary-search-bounds "^2.0.0"
     cdt2d "^1.0.0"
     clean-pslg "^1.1.0"
     gl-buffer "^2.1.2"
     gl-shader "^4.0.5"
-    glslify "^6.1.0"
+    glslify "^7.0.0"
     iota-array "^1.0.0"
     ndarray "^1.0.18"
     surface-nets "^1.0.2"
 
-gl-error3d@^1.0.9:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/gl-error3d/-/gl-error3d-1.0.10.tgz#8d2aa11a58ee10d8578d11aa39f301316d30e1a6"
+gl-error3d@^1.0.11:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/gl-error3d/-/gl-error3d-1.0.12.tgz#55ff312287cd8645f23cd3c8e1a8bc2879e3d008"
   dependencies:
     gl-buffer "^2.1.2"
     gl-shader "^4.2.1"
     gl-vao "^1.3.0"
-    glsl-out-of-range "^1.0.3"
-    glslify "^6.0.2"
+    glsl-out-of-range "^1.0.4"
+    glslify "^7.0.0"
 
-gl-fbo@^2.0.3:
+gl-fbo@^2.0.3, gl-fbo@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/gl-fbo/-/gl-fbo-2.0.5.tgz#0fa75a497cf787695530691c8f04abb6fb55fa22"
   dependencies:
@@ -3695,29 +3687,29 @@ gl-format-compiler-error@^1.0.2:
     glsl-shader-name "^1.0.0"
     sprintf-js "^1.0.3"
 
-gl-heatmap2d@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/gl-heatmap2d/-/gl-heatmap2d-1.0.4.tgz#0a11cc113dbb9744004f5d265e7d8c1935ebab15"
+gl-heatmap2d@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/gl-heatmap2d/-/gl-heatmap2d-1.0.5.tgz#90364ea643fe48bd555ce84143df076344dbb398"
   dependencies:
     binary-search-bounds "^2.0.3"
     gl-buffer "^2.1.2"
     gl-shader "^4.0.5"
-    glslify "^6.1.0"
+    glslify "^7.0.0"
     iota-array "^1.0.0"
     typedarray-pool "^1.1.0"
 
-gl-line3d@^1.1.6:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/gl-line3d/-/gl-line3d-1.1.7.tgz#f90da1920026cd761765bfbf0331cdcfbba91bf8"
+gl-line3d@^1.1.8:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/gl-line3d/-/gl-line3d-1.1.9.tgz#dc6b59e0415f8d14b8eb699e2cbd53a0988ba224"
   dependencies:
-    binary-search-bounds "^1.0.0"
+    binary-search-bounds "^2.0.4"
     gl-buffer "^2.0.8"
     gl-shader "^4.2.1"
     gl-texture2d "^2.0.2"
     gl-vao "^1.1.3"
-    glsl-out-of-range "^1.0.3"
+    glsl-out-of-range "^1.0.4"
     glsl-read-float "^1.0.0"
-    glslify "^6.1.0"
+    glslify "^7.0.0"
     ndarray "^1.0.16"
 
 gl-mat2@^1.0.0:
@@ -3740,9 +3732,9 @@ gl-matrix-invert@^1.0.0:
     gl-mat3 "^1.0.0"
     gl-mat4 "^1.0.0"
 
-gl-mesh3d@^2.0.2:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/gl-mesh3d/-/gl-mesh3d-2.0.3.tgz#56bcd41cc67d3a2f3998f0e4d490395ec8356789"
+gl-mesh3d@^2.0.6:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/gl-mesh3d/-/gl-mesh3d-2.0.7.tgz#db8faddd0197af04990d722a2bbe64e88118c543"
   dependencies:
     barycentric "^1.0.1"
     colormap "^2.1.0"
@@ -3751,52 +3743,51 @@ gl-mesh3d@^2.0.2:
     gl-shader "^4.2.1"
     gl-texture2d "^2.0.8"
     gl-vao "^1.1.3"
-    glsl-face-normal "^1.0.2"
-    glsl-out-of-range "^1.0.3"
+    glsl-out-of-range "^1.0.4"
     glsl-specular-cook-torrance "^2.0.1"
-    glslify "^6.1.0"
+    glslify "^7.0.0"
     ndarray "^1.0.15"
     normals "^1.0.1"
     polytope-closest-point "^1.0.0"
     simplicial-complex-contour "^1.0.0"
     typedarray-pool "^1.1.0"
 
-gl-plot2d@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/gl-plot2d/-/gl-plot2d-1.4.0.tgz#6ffe3b39fddd9fb3fe49066065ae98a3dd472a6d"
+gl-plot2d@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/gl-plot2d/-/gl-plot2d-1.4.2.tgz#9da4ec97c489d6885deb835842da7888c1a2dff9"
   dependencies:
-    binary-search-bounds "^2.0.3"
+    binary-search-bounds "^2.0.4"
     gl-buffer "^2.1.2"
-    gl-select-static "^2.0.2"
+    gl-select-static "^2.0.4"
     gl-shader "^4.2.1"
     glsl-inverse "^1.0.0"
-    glslify "^6.1.0"
-    text-cache "^4.2.0"
+    glslify "^7.0.0"
+    text-cache "^4.2.1"
 
-gl-plot3d@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/gl-plot3d/-/gl-plot3d-1.6.1.tgz#7785b02b0a20f64f2461d12efeaaa5d75cd1cd24"
+gl-plot3d@^1.6.3:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/gl-plot3d/-/gl-plot3d-1.6.3.tgz#17e1420fa6da178d447f9ef5a82be34b86cb60d7"
   dependencies:
-    "3d-view-controls" "^2.2.0"
-    a-big-triangle "^1.0.0"
-    gl-axes3d "^1.4.2"
-    gl-fbo "^2.0.3"
-    gl-mat4 "^1.1.2"
-    gl-select-static "^2.0.2"
+    "3d-view-controls" "^2.2.2"
+    a-big-triangle "^1.0.3"
+    gl-axes3d "^1.4.4"
+    gl-fbo "^2.0.5"
+    gl-mat4 "^1.2.0"
+    gl-select-static "^2.0.4"
     gl-shader "^4.2.1"
-    gl-spikes3d "^1.0.3"
-    glslify "^6.1.0"
+    gl-spikes3d "^1.0.8"
+    glslify "^7.0.0"
     is-mobile "^2.0.0"
-    mouse-change "^1.1.1"
-    ndarray "^1.0.16"
+    mouse-change "^1.4.0"
+    ndarray "^1.0.18"
 
-gl-pointcloud2d@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/gl-pointcloud2d/-/gl-pointcloud2d-1.0.1.tgz#c87e55164346787af9e8a44459054ae52091546f"
+gl-pointcloud2d@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/gl-pointcloud2d/-/gl-pointcloud2d-1.0.2.tgz#4cd692bf5a021759bdea5878e94a0f9683a8a431"
   dependencies:
     gl-buffer "^2.1.2"
     gl-shader "^4.2.1"
-    glslify "^6.1.0"
+    glslify "^7.0.0"
     typedarray-pool "^1.1.0"
 
 gl-quat@^1.0.0:
@@ -3807,31 +3798,31 @@ gl-quat@^1.0.0:
     gl-vec3 "^1.0.3"
     gl-vec4 "^1.0.0"
 
-gl-scatter3d@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/gl-scatter3d/-/gl-scatter3d-1.1.2.tgz#f5f6333f67a5706313cb5570ef130de799b28314"
+gl-scatter3d@^1.1.4:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/gl-scatter3d/-/gl-scatter3d-1.1.5.tgz#e8978af3bb64a37d4527eeeeee139ad0e4ae74da"
   dependencies:
     gl-buffer "^2.0.6"
     gl-mat4 "^1.0.0"
     gl-shader "^4.2.0"
     gl-vao "^1.1.2"
-    glsl-out-of-range "^1.0.3"
-    glslify "^6.1.0"
+    glsl-out-of-range "^1.0.4"
+    glslify "^7.0.0"
     is-string-blank "^1.0.1"
     typedarray-pool "^1.0.2"
-    vectorize-text "^3.2.0"
+    vectorize-text "^3.2.1"
 
-gl-select-box@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/gl-select-box/-/gl-select-box-1.0.2.tgz#0c712387eda7a49e8a0934f32a427a3c8ea6dfdb"
+gl-select-box@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/gl-select-box/-/gl-select-box-1.0.3.tgz#8c47ac6f18fa583aa32d9dfe023ac1d588fd9d67"
   dependencies:
     gl-buffer "^2.1.2"
     gl-shader "^4.0.5"
-    glslify "^6.1.0"
+    glslify "^7.0.0"
 
-gl-select-static@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/gl-select-static/-/gl-select-static-2.0.2.tgz#f3e1901df03181d532e795853230679d4af57ee9"
+gl-select-static@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/gl-select-static/-/gl-select-static-2.0.4.tgz#c6a12ca956f898bf2f8b9eece57c89bdc1bce6a4"
   dependencies:
     bit-twiddle "^1.0.2"
     cwise "^1.0.3"
@@ -3839,25 +3830,25 @@ gl-select-static@^2.0.2:
     ndarray "^1.0.15"
     typedarray-pool "^1.1.0"
 
-gl-shader@^4.0.4, gl-shader@^4.0.5, gl-shader@^4.2.0, gl-shader@^4.2.1:
+gl-shader@^4.0.5, gl-shader@^4.2.0, gl-shader@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/gl-shader/-/gl-shader-4.2.1.tgz#bc9b808e9293c51b668e88de615b0c113708dc2f"
   dependencies:
     gl-format-compiler-error "^1.0.2"
     weakmap-shim "^1.1.0"
 
-gl-spikes2d@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/gl-spikes2d/-/gl-spikes2d-1.0.1.tgz#cacdb2d3dbcd202b853452e8500a8b077949cc03"
+gl-spikes2d@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/gl-spikes2d/-/gl-spikes2d-1.0.2.tgz#ef8dbcff6c7451dec2b751d7a3c593d09ad5457f"
 
-gl-spikes3d@^1.0.3:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/gl-spikes3d/-/gl-spikes3d-1.0.6.tgz#6cf748730fb6759d566a6b6c1e32c2fd17f62ef0"
+gl-spikes3d@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/gl-spikes3d/-/gl-spikes3d-1.0.8.tgz#4a7ce6659a5404a444d51071d17acbeacf927445"
   dependencies:
     gl-buffer "^2.1.2"
-    gl-shader "^4.0.4"
-    gl-vao "^1.2.1"
-    glslify "^6.1.0"
+    gl-shader "^4.2.1"
+    gl-vao "^1.3.0"
+    glslify "^7.0.0"
 
 gl-state@^1.0.0:
   version "1.0.0"
@@ -3865,20 +3856,20 @@ gl-state@^1.0.0:
   dependencies:
     uniq "^1.0.0"
 
-gl-streamtube3d@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/gl-streamtube3d/-/gl-streamtube3d-1.1.1.tgz#6648f36754eb3562e9cff20c956f6216d79abe97"
+gl-streamtube3d@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/gl-streamtube3d/-/gl-streamtube3d-1.1.2.tgz#f47562f48a56339624d31430155d45a897a1bd0a"
   dependencies:
     gl-vec3 "^1.0.0"
     glsl-inverse "^1.0.0"
-    glsl-out-of-range "^1.0.3"
-    glslify "^6.1.1"
+    glsl-out-of-range "^1.0.4"
+    glslify "^7.0.0"
 
-gl-surface3d@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/gl-surface3d/-/gl-surface3d-1.4.0.tgz#e7a157941068bdb3c0c757739e6cf4b60ddf9f3c"
+gl-surface3d@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/gl-surface3d/-/gl-surface3d-1.4.1.tgz#cdb4e661b3c6a5ccecacc00e0a0185ff6863aaf4"
   dependencies:
-    binary-search-bounds "^1.0.0"
+    binary-search-bounds "^2.0.4"
     bit-twiddle "^1.0.2"
     colormap "^2.1.0"
     dup "^1.0.0"
@@ -3887,9 +3878,9 @@ gl-surface3d@^1.4.0:
     gl-shader "^4.2.0"
     gl-texture2d "^2.0.0"
     gl-vao "^1.1.1"
-    glsl-out-of-range "^1.0.3"
+    glsl-out-of-range "^1.0.4"
     glsl-specular-beckmann "^1.1.2"
-    glslify "^6.1.0"
+    glslify "^7.0.0"
     ndarray "^1.0.16"
     ndarray-gradient "^1.0.0"
     ndarray-ops "^1.2.1"
@@ -3940,11 +3931,11 @@ gl-util@^3.0.7:
     object-assign "^4.1.0"
     pick-by-alias "^1.2.0"
 
-gl-vao@^1.1.1, gl-vao@^1.1.2, gl-vao@^1.1.3, gl-vao@^1.2.0, gl-vao@^1.2.1, gl-vao@^1.3.0:
+gl-vao@^1.1.1, gl-vao@^1.1.2, gl-vao@^1.1.3, gl-vao@^1.2.0, gl-vao@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/gl-vao/-/gl-vao-1.3.0.tgz#e9e92aa95588cab9d5c2f04b693440c3df691923"
 
-gl-vec3@^1.0.0, gl-vec3@^1.0.2, gl-vec3@^1.0.3:
+gl-vec3@^1.0.0, gl-vec3@^1.0.2, gl-vec3@^1.0.3, gl-vec3@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/gl-vec3/-/gl-vec3-1.1.3.tgz#a47c62f918774a06cbed1b65bcd0288ecbb03826"
 
@@ -4053,10 +4044,6 @@ globby@^8.0.0, globby@^8.0.1:
     pify "^3.0.0"
     slash "^1.0.0"
 
-glsl-face-normal@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/glsl-face-normal/-/glsl-face-normal-1.0.2.tgz#7ee775d919a4f2ee92f57bb698e87cc75dbf1288"
-
 glsl-inject-defines@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/glsl-inject-defines/-/glsl-inject-defines-1.0.3.tgz#dd1aacc2c17fcb2bd3fc32411c6633d0d7b60fd4"
@@ -4069,7 +4056,7 @@ glsl-inverse@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/glsl-inverse/-/glsl-inverse-1.0.0.tgz#12c0b1d065f558444d1e6feaf79b5ddf8a918ae6"
 
-glsl-out-of-range@^1.0.3:
+glsl-out-of-range@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/glsl-out-of-range/-/glsl-out-of-range-1.0.4.tgz#3d73d083bc9ecc73efd45dfc7063c29e92c9c873"
 
@@ -4177,48 +4164,6 @@ glslify-deps@^1.2.5:
     inherits "^2.0.1"
     map-limit "0.0.1"
     resolve "^1.0.0"
-
-glslify@^6.0.2, glslify@^6.1.0, glslify@^6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/glslify/-/glslify-6.1.1.tgz#f5ee3e79f314bbdb8ededb7a27830db3f2df7e40"
-  dependencies:
-    bl "^1.0.0"
-    concat-stream "^1.5.2"
-    duplexify "^3.4.5"
-    falafel "^2.0.0"
-    from2 "^2.3.0"
-    glsl-resolve "0.0.1"
-    glsl-token-whitespace-trim "^1.0.0"
-    glslify-bundle "^5.0.0"
-    glslify-deps "^1.2.5"
-    minimist "^1.2.0"
-    resolve "^1.1.5"
-    stack-trace "0.0.9"
-    static-eval "^2.0.0"
-    tape "^4.6.0"
-    through2 "^2.0.1"
-    xtend "^4.0.0"
-
-glslify@^6.3.1:
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/glslify/-/glslify-6.3.1.tgz#af74f4a47497603f21498ad14172396cddc8062f"
-  dependencies:
-    bl "^1.0.0"
-    concat-stream "^1.5.2"
-    duplexify "^3.4.5"
-    falafel "^2.1.0"
-    from2 "^2.3.0"
-    glsl-resolve "0.0.1"
-    glsl-token-whitespace-trim "^1.0.0"
-    glslify-bundle "^5.0.0"
-    glslify-deps "^1.2.5"
-    minimist "^1.2.0"
-    resolve "^1.1.5"
-    stack-trace "0.0.9"
-    static-eval "^2.0.0"
-    tape "^4.6.0"
-    through2 "^2.0.1"
-    xtend "^4.0.0"
 
 glslify@^7.0.0:
   version "7.0.0"
@@ -5188,7 +5133,7 @@ lcid@^1.0.0:
   dependencies:
     invert-kv "^1.0.0"
 
-left-pad@^1.2.0:
+left-pad@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/left-pad/-/left-pad-1.3.0.tgz#5b8a3a7765dfe001261dde915589e782f8c94d1e"
 
@@ -6409,7 +6354,7 @@ parse-passwd@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/parse-passwd/-/parse-passwd-1.0.0.tgz#6d5b934a456993b23d37f40a382d6f1666a8e5c6"
 
-parse-rect@^1.1.0, parse-rect@^1.1.1, parse-rect@^1.2.0:
+parse-rect@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/parse-rect/-/parse-rect-1.2.0.tgz#e0a5b0dbaaaee637a0a1eb9779969e19399d8dec"
   dependencies:
@@ -6541,7 +6486,7 @@ permutation-rank@^1.0.0:
     invert-permutation "^1.0.0"
     typedarray-pool "^1.0.0"
 
-pick-by-alias@^1.0.0, pick-by-alias@^1.1.0, pick-by-alias@^1.1.1, pick-by-alias@^1.2.0:
+pick-by-alias@^1.1.0, pick-by-alias@^1.1.1, pick-by-alias@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/pick-by-alias/-/pick-by-alias-1.2.0.tgz#5f7cb2b1f21a6e1e884a0c87855aa4a37361107b"
 
@@ -6595,8 +6540,8 @@ planar-graph-to-polyline@^1.0.0:
     uniq "^1.0.0"
 
 plotly.js@^1.39.2:
-  version "1.43.1"
-  resolved "https://registry.yarnpkg.com/plotly.js/-/plotly.js-1.43.1.tgz#1e056eb11ecb7f0c3096c71cb7fc29cc182afa4d"
+  version "1.44.1"
+  resolved "https://registry.yarnpkg.com/plotly.js/-/plotly.js-1.44.1.tgz#a3507f91c1bac06664ba8cdc0e45fce2721d9fb9"
   dependencies:
     "3d-view" "^2.0.0"
     "@plotly/d3-sankey" "^0.5.1"
@@ -6612,23 +6557,23 @@ plotly.js@^1.39.2:
     es6-promise "^3.0.2"
     fast-isnumeric "^1.1.2"
     font-atlas-sdf "^1.3.3"
-    gl-cone3d "^1.2.1"
-    gl-contour2d "^1.1.4"
-    gl-error3d "^1.0.9"
-    gl-heatmap2d "^1.0.4"
-    gl-line3d "^1.1.6"
+    gl-cone3d "^1.2.2"
+    gl-contour2d "^1.1.5"
+    gl-error3d "^1.0.11"
+    gl-heatmap2d "^1.0.5"
+    gl-line3d "^1.1.8"
     gl-mat4 "^1.2.0"
-    gl-mesh3d "^2.0.2"
-    gl-plot2d "^1.4.0"
-    gl-plot3d "^1.6.1"
-    gl-pointcloud2d "^1.0.1"
-    gl-scatter3d "^1.1.2"
-    gl-select-box "^1.0.2"
-    gl-spikes2d "^1.0.1"
-    gl-streamtube3d "^1.1.1"
-    gl-surface3d "^1.4.0"
+    gl-mesh3d "^2.0.6"
+    gl-plot2d "^1.4.2"
+    gl-plot3d "^1.6.3"
+    gl-pointcloud2d "^1.0.2"
+    gl-scatter3d "^1.1.4"
+    gl-select-box "^1.0.3"
+    gl-spikes2d "^1.0.2"
+    gl-streamtube3d "^1.1.2"
+    gl-surface3d "^1.4.1"
     gl-text "^1.1.6"
-    glslify "^6.3.1"
+    glslify "^7.0.0"
     has-hover "^1.0.1"
     has-passive-events "^1.0.0"
     mapbox-gl "0.45.0"
@@ -6642,10 +6587,10 @@ plotly.js@^1.39.2:
     point-cluster "^3.1.4"
     polybooljs "^1.2.0"
     regl "^1.3.11"
-    regl-error2d "^2.0.5"
-    regl-line2d "^3.0.12"
-    regl-scatter2d "^3.1.2"
-    regl-splom "^1.0.5"
+    regl-error2d "^2.0.6"
+    regl-line2d "3.0.13"
+    regl-scatter2d "^3.1.3"
+    regl-splom "^1.0.6"
     right-now "^1.0.0"
     robust-orientation "^1.1.3"
     sane-topojson "^2.0.0"
@@ -6661,17 +6606,7 @@ pluralize@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-7.0.0.tgz#298b89df8b93b0221dbf421ad2b1b1ea23fc6777"
 
-point-cluster@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/point-cluster/-/point-cluster-1.0.2.tgz#553b1f8732a8c6ea7042a450447111c56c8ab683"
-  dependencies:
-    array-bounds "^1.0.1"
-    array-normalize "^1.1.3"
-    binary-search-bounds "^2.0.4"
-    clamp "^1.0.1"
-    parse-rect "^1.1.1"
-
-point-cluster@^3.1.2, point-cluster@^3.1.4:
+point-cluster@^3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/point-cluster/-/point-cluster-3.1.4.tgz#785fe5ca1351e2cf00f8291a5a653113db892f8e"
   dependencies:
@@ -6887,9 +6822,9 @@ quote-stream@~0.0.0:
     minimist "0.0.8"
     through2 "~0.4.1"
 
-raf@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/raf/-/raf-3.4.0.tgz#a28876881b4bc2ca9117d4138163ddb80f781575"
+raf@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/raf/-/raf-3.4.1.tgz#0742e99a4a6552f445d73e3ee0328af0ff1ede39"
   dependencies:
     performance-now "^2.1.0"
 
@@ -7149,9 +7084,9 @@ regjsparser@^0.1.4:
   dependencies:
     jsesc "~0.5.0"
 
-regl-error2d@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/regl-error2d/-/regl-error2d-2.0.5.tgz#7a8c3920ed334437676f6fb758b552ecf1e5adec"
+regl-error2d@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/regl-error2d/-/regl-error2d-2.0.6.tgz#0d980b4b0e5b8fba23b3bf16b51a29daad7ccc0d"
   dependencies:
     array-bounds "^1.0.1"
     bubleify "^1.0.0"
@@ -7162,9 +7097,9 @@ regl-error2d@^2.0.5:
     to-float32 "^1.0.0"
     update-diff "^1.0.2"
 
-regl-line2d@^3.0.12:
-  version "3.0.12"
-  resolved "https://registry.yarnpkg.com/regl-line2d/-/regl-line2d-3.0.12.tgz#e2ae0e2d4056b07aee17ed43a9d13d71f429f6d6"
+regl-line2d@3.0.13:
+  version "3.0.13"
+  resolved "https://registry.yarnpkg.com/regl-line2d/-/regl-line2d-3.0.13.tgz#0300dc523f95145b553ac59740f9d798e5f1e73f"
   dependencies:
     array-bounds "^1.0.0"
     array-normalize "^1.1.3"
@@ -7173,35 +7108,15 @@ regl-line2d@^3.0.12:
     earcut "^2.1.1"
     es6-weak-map "^2.0.2"
     flatten-vertex-data "^1.0.0"
-    glslify "^6.3.1"
+    glslify "^7.0.0"
     object-assign "^4.1.1"
     parse-rect "^1.2.0"
     pick-by-alias "^1.1.0"
     to-float32 "^1.0.0"
 
-regl-scatter2d@^3.0.6:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/regl-scatter2d/-/regl-scatter2d-3.0.6.tgz#ee03d18803b114fd3569115a7bf848fdd44e8d4d"
-  dependencies:
-    array-range "^1.0.1"
-    array-rearrange "^2.2.2"
-    bubleify "^1.0.0"
-    clamp "^1.0.1"
-    color-id "^1.1.0"
-    color-normalize "^1.0.3"
-    flatten-vertex-data "^1.0.0"
-    glslify "^6.1.1"
-    is-iexplorer "^1.0.0"
-    object-assign "^4.1.1"
-    parse-rect "^1.1.0"
-    pick-by-alias "^1.0.0"
-    point-cluster "^3.1.2"
-    to-float32 "^1.0.0"
-    update-diff "^1.1.0"
-
-regl-scatter2d@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/regl-scatter2d/-/regl-scatter2d-3.1.2.tgz#7a74eab6163aff8b1d3e07a58e8236673731ba80"
+regl-scatter2d@^3.1.2, regl-scatter2d@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/regl-scatter2d/-/regl-scatter2d-3.1.3.tgz#1ddd8572fd02b3fbe2baca9a7fe08fd6ec73a802"
   dependencies:
     array-range "^1.0.1"
     array-rearrange "^2.2.2"
@@ -7209,41 +7124,37 @@ regl-scatter2d@^3.1.2:
     color-id "^1.1.0"
     color-normalize "^1.3.0"
     color-rgba "^2.1.0"
-    flatten-vertex-data "^1.0.0"
+    flatten-vertex-data "^1.0.2"
     glslify "^7.0.0"
     image-palette "^2.1.0"
     is-iexplorer "^1.0.0"
     object-assign "^4.1.1"
-    parse-rect "^1.1.0"
-    pick-by-alias "^1.0.0"
-    point-cluster "^3.1.2"
-    to-float32 "^1.0.0"
+    parse-rect "^1.2.0"
+    pick-by-alias "^1.2.0"
+    point-cluster "^3.1.4"
+    to-float32 "^1.0.1"
     update-diff "^1.1.0"
 
-regl-splom@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/regl-splom/-/regl-splom-1.0.5.tgz#bc9db7be311228bfb762a3435976cf53120f29ee"
+regl-splom@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/regl-splom/-/regl-splom-1.0.6.tgz#c14dba179d93490722e23d9d4751184cd247320e"
   dependencies:
     array-bounds "^1.0.1"
     array-range "^1.0.1"
-    bubleify "^1.1.0"
-    color-alpha "^1.0.2"
+    bubleify "^1.2.0"
+    color-alpha "^1.0.3"
     defined "^1.0.0"
     flatten-vertex-data "^1.0.2"
-    left-pad "^1.2.0"
+    left-pad "^1.3.0"
     parse-rect "^1.2.0"
     pick-by-alias "^1.2.0"
-    point-cluster "^1.0.2"
-    raf "^3.4.0"
-    regl-scatter2d "^3.0.6"
+    point-cluster "^3.1.4"
+    raf "^3.4.1"
+    regl-scatter2d "^3.1.2"
 
-regl@^1.3.11:
+regl@^1.3.11, regl@^1.3.6:
   version "1.3.11"
   resolved "https://registry.yarnpkg.com/regl/-/regl-1.3.11.tgz#515e5173ffdc0618f908dd4e338a34ae9555f745"
-
-regl@^1.3.6:
-  version "1.3.7"
-  resolved "https://registry.yarnpkg.com/regl/-/regl-1.3.7.tgz#0742755dead1aa230f08b79b98baea1048a2b80a"
 
 relateurl@0.2.x:
   version "0.2.7"
@@ -8308,7 +8219,7 @@ tapable@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-1.0.0.tgz#cbb639d9002eed9c6b5975eb20598d7936f1f9f2"
 
-tape@^4.0.0, tape@^4.6.0:
+tape@^4.0.0:
   version "4.9.1"
   resolved "https://registry.yarnpkg.com/tape/-/tape-4.9.1.tgz#1173d7337e040c76fbf42ec86fcabedc9b3805c9"
   dependencies:
@@ -8345,11 +8256,11 @@ temp@^0.8.1:
     os-tmpdir "^1.0.0"
     rimraf "~2.2.6"
 
-text-cache@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/text-cache/-/text-cache-4.2.0.tgz#2822114d50de72c7d5845a4f3204f7b21fd104c7"
+text-cache@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/text-cache/-/text-cache-4.2.1.tgz#c89e2407827c288f668b3a3454912511c2364245"
   dependencies:
-    vectorize-text "^3.2.0"
+    vectorize-text "^3.2.1"
 
 text-table@^0.2.0, text-table@~0.2.0:
   version "0.2.0"
@@ -8447,6 +8358,10 @@ to-fast-properties@^2.0.0:
 to-float32@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/to-float32/-/to-float32-1.0.0.tgz#32a310fe2fb7d49459037b1d47447ce5b2d5ac95"
+
+to-float32@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/to-float32/-/to-float32-1.0.1.tgz#22d5921f38183164b9e7e9876158c0c16cb9753a"
 
 to-object-path@^0.3.0:
   version "0.3.0"
@@ -8900,9 +8815,9 @@ vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
 
-vectorize-text@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/vectorize-text/-/vectorize-text-3.2.0.tgz#bf400b39ad25d369bee27fc42c7a49d9aefd46ef"
+vectorize-text@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/vectorize-text/-/vectorize-text-3.2.1.tgz#85921abd9685af775fd20a01041a2837fe51bdb5"
   dependencies:
     cdt2d "^1.0.0"
     clean-pslg "^1.1.0"
