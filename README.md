@@ -56,6 +56,7 @@ this library.
 | `choropleth`          |             |
 | `cone`                |             |
 | `contour`             |             |
+| `heatmap`             |             |
 | `histogram`           |             |
 | `histogram2d`         |             |
 | `histogram2dcontour`  |             |
