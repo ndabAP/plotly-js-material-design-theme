@@ -1,13 +1,13 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const path = require('path')
 const env = require('yargs').argv.env
-const ReloadPlugin = require('reload-html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 let plugins = []
 if (env === 'build') plugins.push(new UglifyJsPlugin())
 
 const library = {
+  mode: 'production',
   entry: `${__dirname}/src/index.js`,
   devtool: 'source-map',
   output: {
@@ -43,6 +43,7 @@ const library = {
 
 let test
 test = {
+  mode: 'development',
   entry: `${__dirname}/test/index.js`,
   devtool: 'source-map',
 
@@ -78,7 +79,7 @@ test = {
     filename: 'index.html',
     template: 'index.html',
     inject: true
-  }), new ReloadPlugin()],
+  })],
 
   devServer: {
     contentBase: __dirname
@@ -87,7 +88,7 @@ test = {
 
 if (env === 'build') {
   // Remove reload plugin since building never stops
-  test.plugins.splice(test.plugins.length - 1, 1)
+  // test.plugins.splice(test.plugins.length - 1, 1)
   test.output = {
     path: `${__dirname}/docs`,
     libraryTarget: 'umd',
