@@ -3859,10 +3859,10 @@ gl-streamtube3d@^1.2.0:
     glsl-out-of-range "^1.0.4"
     glslify "^7.0.0"
 
-gl-surface3d@^1.4.2:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/gl-surface3d/-/gl-surface3d-1.4.2.tgz#d378acc77ccb51467f9a196088afbc43ca13fc66"
-  integrity sha512-y+yYrkKk6stUApUuKyPyZydcXrjGT3O18WuULLSJsTeBD0+quCMyVAIS+YiyBvEwao1NKDk45CgxMxCY3DHZaA==
+gl-surface3d@^1.4.3:
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/gl-surface3d/-/gl-surface3d-1.4.5.tgz#9a6d702aadc0f9a134e74df4c401be5df605642d"
+  integrity sha512-uu+s3jxM7kMdTpYvXVJPujOQMo3B/+AOG4KX7niZHVnykuCKO11+haZSDF2ucymrIrRyUGknGIto6CVpLmP7og==
   dependencies:
     binary-search-bounds "^2.0.4"
     bit-twiddle "^1.0.2"
@@ -6375,9 +6375,9 @@ planar-graph-to-polyline@^1.0.0:
     uniq "^1.0.0"
 
 plotly.js@^1.45.2:
-  version "1.45.2"
-  resolved "https://registry.yarnpkg.com/plotly.js/-/plotly.js-1.45.2.tgz#b88aeb35ed620ad6c83d15fad180f21b9b942146"
-  integrity sha512-IRmQ5D8CKu6u0bOec6MYLFrwYWqwEdFAg0kYGyKsRFMorSKl8i3qVI4uxJe0reh08jtW6GIHzOi2qSl6m9jB8w==
+  version "1.45.3"
+  resolved "https://registry.yarnpkg.com/plotly.js/-/plotly.js-1.45.3.tgz#cc94c6b720e91dafbd11aae66fa8b9bcffa6f7f1"
+  integrity sha512-yZmzzVFEZ/7S3UghOcM/k126JWJdPA8Cuj26SM2EcyirsSpT2Z5cHQC1WjbjlQ/Xhh8zQVOACHzzgK/vBZPgRg==
   dependencies:
     "@plotly/d3-sankey" "0.7.2"
     alpha-shape "^1.0.0"
@@ -6408,7 +6408,7 @@ plotly.js@^1.45.2:
     gl-select-box "^1.0.3"
     gl-spikes2d "^1.0.2"
     gl-streamtube3d "^1.2.0"
-    gl-surface3d "^1.4.2"
+    gl-surface3d "^1.4.3"
     gl-text "^1.1.6"
     glslify "^7.0.0"
     has-hover "^1.0.1"
