@@ -56,6 +56,6 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.1",
-    "yargs": "^10.0.3"
+    "yargs": "^13.2.2"
   }
 }
