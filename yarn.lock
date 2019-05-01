@@ -1840,10 +1840,10 @@ color-space@^1.14.6:
     hsluv "^0.0.3"
     mumath "^3.3.4"
 
-colormap@^2.1.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/colormap/-/colormap-2.3.0.tgz#f725c757c5c6f0940a5342a723c68044ac06cc15"
-  integrity sha512-Mkk6mQUMbCleXEeStFm2xLwv5zbRakZMUFB1T1+iNEv58VKBByfPwYIjMQDwSRmXNM1gvo5y3WTYAhmdMn/rbg==
+colormap@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/colormap/-/colormap-2.3.1.tgz#9f2ab643591c0728d32332d5480b2487a4e0f249"
+  integrity sha512-TEzNlo/qYp6pBoR2SK9JiV+DG1cmUcVO/+DEJqVPSHIKNlWh5L5L4FYog7b/h0bAnhKhpOAvx/c1dFp2QE9sFw==
   dependencies:
     lerp "^1.0.3"
 
@@ -2244,6 +2244,11 @@ d3-force@^1.0.6:
     d3-dispatch "1"
     d3-quadtree "1"
     d3-timer "1"
+
+d3-hierarchy@^1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/d3-hierarchy/-/d3-hierarchy-1.1.8.tgz#7a6317bd3ed24e324641b6f1e76e978836b008cc"
+  integrity sha512-L+GHMSZNwTpiq4rt9GEsNcpLa4M96lXMR8M/nMG9p5hBE0jy6C+3hWtyZMenPQdwla249iJy7Nx0uKt3n+u9+w==
 
 d3-interpolate@1:
   version "1.3.2"
@@ -3568,10 +3573,10 @@ get-value@^2.0.3, get-value@^2.0.6:
   resolved "https://registry.yarnpkg.com/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
   integrity sha1-3BXKHGcjh8p2vTesCjlbogQqLCg=
 
-gl-axes3d@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/gl-axes3d/-/gl-axes3d-1.5.1.tgz#2aed7265017608976cac6305de76d43203207db6"
-  integrity sha512-AOx3jfzN+Z2YTFZ+7OTYaRWoFgSJhYA35BHZI8Q1VnYkB1ZQpco837x3zDSioA/qjkTG1lSUs2WpsfBoBW9NFg==
+gl-axes3d@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/gl-axes3d/-/gl-axes3d-1.5.2.tgz#27dacb2f246cc5802b1ecddbb2caddf75e0c708a"
+  integrity sha512-47Cfh5KhUVRFtYXgufR4lGY5cyXH7SPgAlS1FlvTGK84spIYFCBMlOGUN3AdavGLGUOcXS4ml+tMM61cY6M3gg==
   dependencies:
     bit-twiddle "^1.0.2"
     dup "^1.0.0"
@@ -3596,10 +3601,10 @@ gl-buffer@^2.0.3, gl-buffer@^2.0.6, gl-buffer@^2.0.8, gl-buffer@^2.1.1, gl-buffe
     ndarray-ops "^1.1.0"
     typedarray-pool "^1.0.0"
 
-gl-cone3d@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/gl-cone3d/-/gl-cone3d-1.3.0.tgz#d99fc8bce06a7bb3435a0902f1b1c6f4a6969a47"
-  integrity sha512-XOOrEkwRongv6FYUu1/y4C3uFf1pwYWXnpXFrdyQsQNNTUje04aj+ImMXcsnSUIH0aE1chL3Q7i/R6AU3NHU6g==
+gl-cone3d@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/gl-cone3d/-/gl-cone3d-1.3.1.tgz#a364641de93542dffeef5234f87c7105b0867e0d"
+  integrity sha512-ftw75smsDy5nU94susUNimXo8H40BEOVjaFrjT387vP4fJqkSVpzVK7jGrPA8/nSrFCOIQ0msWNYL9MMqQ3hjg==
   dependencies:
     gl-shader "^4.2.1"
     gl-vec3 "^1.1.3"
@@ -3627,10 +3632,10 @@ gl-contour2d@^1.1.5:
     ndarray "^1.0.18"
     surface-nets "^1.0.2"
 
-gl-error3d@^1.0.14:
-  version "1.0.14"
-  resolved "https://registry.yarnpkg.com/gl-error3d/-/gl-error3d-1.0.14.tgz#ec2acc82d135fb67e88b5e0e9c8a827a481b7374"
-  integrity sha512-eXhUBLI25vHIm+cqk/cNvBPbXgZnSMSqyl1CMo8SHjcDwhLxZR07Ut9OQbYU4sYE5tFIEOUun8yPDJDoeeZCvw==
+gl-error3d@^1.0.15:
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/gl-error3d/-/gl-error3d-1.0.15.tgz#770726e691f35cbf7d213e9b8531ae94e59516dc"
+  integrity sha512-7mB1zU22Vzdvq0KzzYRzE0xvCRF9nHd1+9ElUqkvt0GMH0gVIpxKk+m3hNPM/iQHmNupcXaE1cBcOQE2agN3uA==
   dependencies:
     gl-buffer "^2.1.2"
     gl-shader "^4.2.1"
@@ -3667,10 +3672,10 @@ gl-heatmap2d@^1.0.5:
     iota-array "^1.0.0"
     typedarray-pool "^1.1.0"
 
-gl-line3d@^1.1.10:
-  version "1.1.10"
-  resolved "https://registry.yarnpkg.com/gl-line3d/-/gl-line3d-1.1.10.tgz#fd77a831aa949de5159dbc1bcf5af0316781ea4f"
-  integrity sha512-/IudYVrkERVwtQNaXYJNwDy3qoN/q/2Pb71bk2cqtTswda7moD2JO5o7xg9enSXGRb6vggRw26G4DDt/iMpK+Q==
+gl-line3d@^1.1.11:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/gl-line3d/-/gl-line3d-1.1.11.tgz#53180030ddb841097d0f8ccb1d04ea8fe2759ddc"
+  integrity sha512-EitFKPEEYdn/ivFOxJ8khSi0BzNum4sXZFLq6SQq21MX5YPCYb0o+XzjpWNuU32BoXORBC78B1JTiQqnTaWhWQ==
   dependencies:
     binary-search-bounds "^2.0.4"
     gl-buffer "^2.0.8"
@@ -3706,13 +3711,13 @@ gl-matrix-invert@^1.0.0:
     gl-mat3 "^1.0.0"
     gl-mat4 "^1.0.0"
 
-gl-mesh3d@^2.0.8:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/gl-mesh3d/-/gl-mesh3d-2.0.8.tgz#598737d6af436726a6ebe5ce49681ba10200f364"
-  integrity sha512-bm7tgN15FAxxrbDf1B0Wj090cObRpGotNbiveJZHol3+++VDRfazYEB6CHjYGkqN+TqxlHaV2UEp5u1RNXRLNw==
+gl-mesh3d@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/gl-mesh3d/-/gl-mesh3d-2.1.1.tgz#b42159654909ec1478500cbc330162d1d7e23a1c"
+  integrity sha512-UuDnuSE/xX8y9/B6EtDsBKllEmKDVmuiD9lsFoQdUq4FPSvwFOo9rKH3fsjK2pfxsTigguF6GhFjHqq+sJKQWg==
   dependencies:
     barycentric "^1.0.1"
-    colormap "^2.1.0"
+    colormap "^2.3.1"
     gl-buffer "^2.0.8"
     gl-mat4 "^1.0.0"
     gl-shader "^4.2.1"
@@ -3740,14 +3745,14 @@ gl-plot2d@^1.4.2:
     glslify "^7.0.0"
     text-cache "^4.2.1"
 
-gl-plot3d@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/gl-plot3d/-/gl-plot3d-2.1.1.tgz#e72c6195a25148c0bb7f7a7b8aeab41de9697d8b"
-  integrity sha512-a4wmasRlBxLmC9v1JihkLSjnKU2Di3X5fanxyx6B/NW8uOdeFrdheQ+q7HI+zwvYgjrS5kGAn2i9mADsPH1xJg==
+gl-plot3d@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/gl-plot3d/-/gl-plot3d-2.2.1.tgz#36d802f6821c7d9c6a0968c7c7d056b6ab54227c"
+  integrity sha512-WSzZ9118mUal3uW/9bCPqdrlncmD/T0zWoOY9PiskIOAJ5dxKhzPbY2XkjDs+jGh/ce1yCSEh6LO9aB9SirGow==
   dependencies:
     "3d-view" "^2.0.0"
     a-big-triangle "^1.0.3"
-    gl-axes3d "^1.5.1"
+    gl-axes3d "^1.5.2"
     gl-fbo "^2.0.5"
     gl-mat4 "^1.2.0"
     gl-select-static "^2.0.4"
@@ -3781,10 +3786,10 @@ gl-quat@^1.0.0:
     gl-vec3 "^1.0.3"
     gl-vec4 "^1.0.0"
 
-gl-scatter3d@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/gl-scatter3d/-/gl-scatter3d-1.2.0.tgz#0dddbba7790cfb35a5e35108b11007298f856d44"
-  integrity sha512-loNTvp227RdoBV5NS/gSOgFxkFUdbGh0ywRpwRdH2KdxSiNevOsUaV80NN7a2sQPpEgBEJCylj+N74Gt/ZxL7g==
+gl-scatter3d@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/gl-scatter3d/-/gl-scatter3d-1.2.1.tgz#149950900ad3002364e40925f0df0c7347662240"
+  integrity sha512-bGeCkqWOvjE+CM6eJGapTfZcVAjAVdUoi3LjRtvnVmpaTBeMF+HWG5mTa1pWKHu+DNEosH3Yjr52wNenYHMUdg==
   dependencies:
     gl-buffer "^2.0.6"
     gl-mat4 "^1.0.0"
@@ -3846,24 +3851,24 @@ gl-state@^1.0.0:
   dependencies:
     uniq "^1.0.0"
 
-gl-streamtube3d@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/gl-streamtube3d/-/gl-streamtube3d-1.2.0.tgz#d5312e3b148e1b9b805b99b0db727677d925081e"
-  integrity sha512-16JFrCb8yOPYrBVMZEgaTmP7I9NRZfBlizaZkKZ2nQpOY+p36WVdDQUqJAJ02/8ZUhjg8YlOzg//8Lk3qPrUzQ==
+gl-streamtube3d@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/gl-streamtube3d/-/gl-streamtube3d-1.2.1.tgz#042ef09a766ab2ffc86ef34a6d4d50f7388ef110"
+  integrity sha512-1aj1noU+jJirl5IwFXk29eDx1nO7PQk4r0UZK3My56J3vDSfRR+IbMq2YBhBkjfCWsKY1nc9ESD8t9EcqZY91w==
   dependencies:
     gl-vec3 "^1.0.0"
     glsl-inverse "^1.0.0"
     glsl-out-of-range "^1.0.4"
     glslify "^7.0.0"
 
-gl-surface3d@^1.4.3:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/gl-surface3d/-/gl-surface3d-1.4.5.tgz#9a6d702aadc0f9a134e74df4c401be5df605642d"
-  integrity sha512-uu+s3jxM7kMdTpYvXVJPujOQMo3B/+AOG4KX7niZHVnykuCKO11+haZSDF2ucymrIrRyUGknGIto6CVpLmP7og==
+gl-surface3d@^1.4.6:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/gl-surface3d/-/gl-surface3d-1.4.6.tgz#a426c704526b558a3fcfa878402b45a6af1ff128"
+  integrity sha512-aItWQTNUX3JJc6i2FbXX82ljPZgDV3kXzkzANcBGoAnKwRpJw12WcMKKTL4sOCs9BW+3sx6BhR0P5+2zh5Scfw==
   dependencies:
     binary-search-bounds "^2.0.4"
     bit-twiddle "^1.0.2"
-    colormap "^2.1.0"
+    colormap "^2.3.1"
     dup "^1.0.0"
     gl-buffer "^2.0.3"
     gl-mat4 "^1.0.0"
@@ -6359,9 +6364,9 @@ planar-graph-to-polyline@^1.0.0:
     uniq "^1.0.0"
 
 plotly.js@^1.45.2:
-  version "1.45.3"
-  resolved "https://registry.yarnpkg.com/plotly.js/-/plotly.js-1.45.3.tgz#cc94c6b720e91dafbd11aae66fa8b9bcffa6f7f1"
-  integrity sha512-yZmzzVFEZ/7S3UghOcM/k126JWJdPA8Cuj26SM2EcyirsSpT2Z5cHQC1WjbjlQ/Xhh8zQVOACHzzgK/vBZPgRg==
+  version "1.47.4"
+  resolved "https://registry.yarnpkg.com/plotly.js/-/plotly.js-1.47.4.tgz#c47c3fae93ca22695f1deabf9db377a38c63a9b5"
+  integrity sha512-dGawdp62+Nh5/ndHF5WGmq0+DfrnSl/dBcwotsj4bx4FcfTX51zaZsYI9itIp+ShjCkB3j681RMnkh4Hok/Y6g==
   dependencies:
     "@plotly/d3-sankey" "0.7.2"
     alpha-shape "^1.0.0"
@@ -6372,27 +6377,28 @@ plotly.js@^1.45.2:
     country-regex "^1.1.0"
     d3 "^3.5.12"
     d3-force "^1.0.6"
+    d3-hierarchy "^1.1.8"
     d3-interpolate "1"
     d3-sankey-circular "0.33.0"
     delaunay-triangulate "^1.1.6"
     es6-promise "^3.0.2"
     fast-isnumeric "^1.1.2"
     font-atlas-sdf "^1.3.3"
-    gl-cone3d "^1.3.0"
+    gl-cone3d "^1.3.1"
     gl-contour2d "^1.1.5"
-    gl-error3d "^1.0.14"
+    gl-error3d "^1.0.15"
     gl-heatmap2d "^1.0.5"
-    gl-line3d "^1.1.10"
+    gl-line3d "^1.1.11"
     gl-mat4 "^1.2.0"
-    gl-mesh3d "^2.0.8"
+    gl-mesh3d "^2.1.1"
     gl-plot2d "^1.4.2"
-    gl-plot3d "^2.1.1"
+    gl-plot3d "^2.2.1"
     gl-pointcloud2d "^1.0.2"
-    gl-scatter3d "^1.2.0"
+    gl-scatter3d "^1.2.1"
     gl-select-box "^1.0.3"
     gl-spikes2d "^1.0.2"
-    gl-streamtube3d "^1.2.0"
-    gl-surface3d "^1.4.3"
+    gl-streamtube3d "^1.2.1"
+    gl-surface3d "^1.4.6"
     gl-text "^1.1.6"
     glslify "^7.0.0"
     has-hover "^1.0.1"
@@ -6408,9 +6414,9 @@ plotly.js@^1.45.2:
     point-cluster "^3.1.4"
     polybooljs "^1.2.0"
     regl "^1.3.11"
-    regl-error2d "^2.0.6"
+    regl-error2d "^2.0.7"
     regl-line2d "3.0.13"
-    regl-scatter2d "^3.1.3"
+    regl-scatter2d "^3.1.4"
     regl-splom "^1.0.6"
     right-now "^1.0.0"
     robust-orientation "^1.1.3"
@@ -6889,10 +6895,10 @@ regjsparser@^0.6.0:
   dependencies:
     jsesc "~0.5.0"
 
-regl-error2d@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/regl-error2d/-/regl-error2d-2.0.6.tgz#0d980b4b0e5b8fba23b3bf16b51a29daad7ccc0d"
-  integrity sha512-Ef7oj7Sgb4W+B1CNbr7IU2w2G4jU6yu4pSofqZxTUvH4cwFw9Jj6QpCPS+36rZgCT0DJVbfGeV6Cq8Ia1855OQ==
+regl-error2d@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/regl-error2d/-/regl-error2d-2.0.7.tgz#26488bcc62d55d1c7085e330228dbc3142888afa"
+  integrity sha512-YCXlu3BIDpR1hsU8HqMn+SiRldevdP2gIFNpaOdBSV2PEJsMmDHo532elzU2K3sB7heDqZzXuY66CfYRL89oDg==
   dependencies:
     array-bounds "^1.0.1"
     bubleify "^1.0.0"
@@ -6921,10 +6927,10 @@ regl-line2d@3.0.13:
     pick-by-alias "^1.1.0"
     to-float32 "^1.0.0"
 
-regl-scatter2d@^3.1.2, regl-scatter2d@^3.1.3:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/regl-scatter2d/-/regl-scatter2d-3.1.3.tgz#1ddd8572fd02b3fbe2baca9a7fe08fd6ec73a802"
-  integrity sha512-71DpYoJKAopjCP8kRgdReoBLIUre9vsoUgoWDEEeSHRsDEqIwPguhuEerxXpqY5zZ8P3COEqjYZ/sGpoeI8WCA==
+regl-scatter2d@^3.1.2, regl-scatter2d@^3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/regl-scatter2d/-/regl-scatter2d-3.1.4.tgz#c5270d2c156e48108b3d302a161d3eafd5f4dabd"
+  integrity sha512-X3FNkh3lw4B3cGLpGZYhSXoeeNAYYeAZnjoP4R8+uCmCbBiwoXUiLQw73HxjsCs53l/upzrSLCwu13QZy/MHeQ==
   dependencies:
     array-range "^1.0.1"
     array-rearrange "^2.2.2"
