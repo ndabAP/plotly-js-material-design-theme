@@ -6442,13 +6442,12 @@ planar-graph-to-polyline@^1.0.0:
     uniq "^1.0.0"
 
 plotly.js@^1.45.2:
-  version "1.47.4"
-  resolved "https://registry.yarnpkg.com/plotly.js/-/plotly.js-1.47.4.tgz#c47c3fae93ca22695f1deabf9db377a38c63a9b5"
-  integrity sha512-dGawdp62+Nh5/ndHF5WGmq0+DfrnSl/dBcwotsj4bx4FcfTX51zaZsYI9itIp+ShjCkB3j681RMnkh4Hok/Y6g==
+  version "1.48.1"
+  resolved "https://registry.yarnpkg.com/plotly.js/-/plotly.js-1.48.1.tgz#d2df4f994592f5bd51cd20898c46f6be63aa30d9"
+  integrity sha512-1dar+duEcH0+kVbiwf2xw0oCkm5UNPg5h7Qs9qa5Ak9wRnRq41yGYpjz8myzuLsQ2tEISc8FXiQdCG5wIt2UFQ==
   dependencies:
     "@plotly/d3-sankey" "0.7.2"
     alpha-shape "^1.0.0"
-    array-range "^1.0.1"
     canvas-fit "^1.5.0"
     color-normalize "^1.3.0"
     convex-hull "^1.0.3"
@@ -6498,7 +6497,7 @@ plotly.js@^1.45.2:
     regl-splom "^1.0.6"
     right-now "^1.0.0"
     robust-orientation "^1.1.3"
-    sane-topojson "^2.0.0"
+    sane-topojson "^3.0.1"
     strongly-connected-components "^1.0.1"
     superscript-text "^1.0.0"
     svg-path-sdf "^1.1.3"
@@ -7325,10 +7324,10 @@ safe-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sane-topojson@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/sane-topojson/-/sane-topojson-2.0.0.tgz#40e25736a28c4cceaaa233f45bb86373a2785b84"
-  integrity sha1-QOJXNqKMTM6qojP0W7hjc6J4W4Q=
+sane-topojson@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/sane-topojson/-/sane-topojson-3.0.1.tgz#eecdb57fa276c86cba521be96b154901376f2228"
+  integrity sha512-pntXgkpEHB3tTAO/rJM0aKLauq7uetB5T15NT1DMpDnbK853M9d8IiFD+WmVUDnyvZtfg3hQ5BC98fec8DlwaQ==
 
 sax@^1.2.4:
   version "1.2.4"
